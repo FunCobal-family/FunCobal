@@ -1,0 +1,130 @@
+///Sample Code of FunCobal
+///made by Takuya Matsunaga
+///of NAIPSS-CMSS/IntelligenceResearch
+///named by Mr. Suwawa
+///24-4-2020
+///lisenced  with *****
+
+@package "fun_cobal_sample";
+@import "package:sample/sample.fcb" as sample1;
+@import "./sample/sample.fcb" as sample2;
+#include <"./sample.hf">;
+@using "core:FC_Sample/Component" ;
+
+//オブジェクト指向プログラミング
+public Class Nums{
+    Let::Either a;
+    Let::Der b;
+    Let::Dem c;
+    Let::Int d;
+    Let::Num e;
+    Var::Double f;
+    Const::Float g;
+    
+
+    static final Let::Int getlen(Let::Der im){
+        Let::Int i;
+        while(){
+
+        }
+        return i;
+    }
+}
+//コンポーネント志向プログラミング
+@component(
+    export ComponentTestA;
+    public Class PartA{
+        //contents
+    }
+    public Class PartB{
+        //contents
+    }
+)
+@component(
+    export ComponentTestB;
+    @function(
+        [Let::Axilin <= Let::Num]::partC (input) = {
+           exp
+        }
+    )
+)
+//外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
+@dare(
+    core.put();
+)
+//関数型プログラミング
+@function(
+    [Let::Int <= Let::Int] factor(n) = {
+        if (n>0) {
+            n * factor(n - 1)
+        } else {
+            1
+        }
+    }
+)
+//構造データの埋め込み・生成
+@sdata(
+    ./mode="bigtable",file="sample.bts",src="./data/"
+)
+@sdata(
+    ./mode="html",file="index.html",src="./a.out/",lang="ja";
+    .html=head..body;
+    .head=meta(charset="UTF-8")..title..link(rel="stylesheet",type="text/css",href="./style.css");
+    .title=CDATA`[some site｜org-rs];
+    .body=font(face="ＭＳ Ｐ明朝,ＭＳ 明朝,凸版文久明朝 R");
+    .font=div:1(class="main")..div:2(class="sub")..div:3(div class="subst")..div:4(class="fotter");
+    .div:1=nav1;
+    .nav:1=div:1_1(class="title");
+    .div:1_1=a:1_1_1(href="./../path/path/somep.html");
+    .a:1_1_1=div
+
+//*:
+    <!doctype html>
+        <html lang="ja">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>some site｜org-rs</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body><font face="ＭＳ Ｐ明朝,ＭＳ 明朝,凸版文久明朝 R">
+		<div class="main">
+			<nav>
+				<div class="title">
+					<a href="./../path/path/somep.html">	
+						<div class="name">org-name</div>
+						<div class="belong">Socphesid; Special Office of Control and Prevention for High Emergency Specious Infectious Disease</div>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<div class="sub">
+			<a href="./../index.html"><nav><div class="title">
+			<div class="name"><span style="white-space: nowrap;">rel-n-some-1</span><span style="white-space: nowrap;">rel-n-some-2</span><span style="white-space: nowrap;">site</span></div><br>
+			<div class="belong"><span style="white-space: nowrap;">Special Website for</span> <span style="white-space: nowrap;">Amid Coronavirus Infectious Desease</span>; <span style="white-space: nowrap;">Covid-19 / SARS-CoV-2</span></div><br>
+			</div></nav></a>
+	site
+		</div>
+		<div class="subst">
+
+		</div>
+
+		<div class="fotter">
+			<div class="copyright">@copyright 2020 by BSSfE & Takuya Matsunaga, all rights reserved.
+			</div>
+			<div class="contacts">
+			<a href="https://twitter.com/BSSfE_Sch_ja"><img src="./system/images/twitter.svg" height="16"  /></a>
+			　　<a href="./contact/index.html"><img src="./system/images/mail.png" height="15" width="18" /></a>
+			</div>
+		</div>
+	</font></body>
+</html>
+
+
+:*//
+)
+
+
+abstract Class {
+    public final void RunB()
+}
