@@ -1,0 +1,23 @@
+\contentsline {section}{\numberline {1}Introduction}{III}%
+\contentsline {subsection}{\numberline {1.1}Introduction}{III}%
+\contentsline {subsection}{\numberline {1.2}Background}{III}%
+\contentsline {section}{\numberline {2}Outline}{III}%
+\contentsline {subsection}{\numberline {2.1}Name}{III}%
+\contentsline {subsection}{\numberline {2.2}Runtime and Development Platform}{III}%
+\contentsline {subsubsection}{\numberline {2.2.1}Outline}{III}%
+\contentsline {subsubsection}{\numberline {2.2.2}Local Runtime Platform}{III}%
+\contentsline {subsubsection}{\numberline {2.2.3}Serveral Runtime Platform}{III}%
+\contentsline {subsubsection}{\numberline {2.2.4}Local Development Platform}{III}%
+\contentsline {subsubsection}{\numberline {2.2.5}Serveral Development Platform}{III}%
+\contentsline {subsubsection}{\numberline {2.2.6}FunCobal Library Platform}{III}%
+\contentsline {subsection}{\numberline {2.3}Class and Object}{IV}%
+\contentsline {subsection}{\numberline {2.4}Variable and Constant}{IV}%
+\contentsline {subsection}{\numberline {2.5}Operator and Equalation}{IV}%
+\contentsline {subsection}{\numberline {2.6}Type Casting on Equation}{IV}%
+\contentsline {subsection}{\numberline {2.7}Array}{IV}%
+\contentsline {subsubsection}{\numberline {2.7.1}Array}{IV}%
+\contentsline {subsubsection}{\numberline {2.7.2}Array}{IV}%
+\contentsline {subsection}{\numberline {2.8}Comments}{IV}%
+\contentsline {section}{\numberline {3}Classes and Methods}{V}%
+\contentsline {subsection}{\numberline {3.1}Structure and Style}{V}%
+\contentsline {subsection}{\numberline {3.2}Modifiers}{V}%

@@ -1,0 +1,211 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.4.16)  5 JUL 2020 14:20
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"FunCobal_Basical_Specification_ Document_Ver1.1.0.tex"
+(./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-04-06>
+(c:/w32tex/share/texmf-dist/tex/jlatex/base/jarticle.cls)
+(c:/w32tex/share/texmf-dist/tex/jlatex/base/j-article.cls
+Document Class: j-article 2000/05/19 v1.4b Standard JLaTeX document class
+(c:/w32tex/share/texmf-dist/tex/jlatex/base/j-size10.clo
+File: j-size10.clo 2000/05/19 v1.4b Standard JLaTeX file (size option)
+
+(c:/w32tex/share/texmf-dist/tex/jlatex/base/jresize10.clo))
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+Runaway argument?
+{^^[$B;29MJ88\newcommand \indexname {^^[$B:w0z^^[(B} \newcommand \figurename \E
+TC.
+./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex:2: File ended while sca
+nning use of \@argdef.
+<inserted text> 
+                \par 
+l.2 \usepackage
+               {listings}
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+(c:/w32tex/share/texmf-dist/tex/latex/listings/listings.sty
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\lst@mode=\count175
+\lst@gtempboxa=\box45
+\lst@token=\toks16
+\lst@length=\count176
+\lst@currlwidth=\dimen135
+\lst@column=\count177
+\lst@pos=\count178
+\lst@lostspace=\dimen136
+\lst@width=\dimen137
+\lst@newlines=\count179
+\lst@lineno=\count180
+\lst@maxwidth=\dimen138
+
+(c:/w32tex/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count181
+\lst@skipnumbers=\count182
+\lst@framebox=\box46
+)
+(c:/w32tex/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(c:/w32tex/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count183
+\l__pdf_internal_box=\box47
+)
+(./FunCobal_Basical_Specification_ Document_Ver1.1.0.aux)
+\openout1 = `"FunCobal_Basical_Specification_ Document_Ver1.1.0.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+\c@lstlisting=\count184
+
+
+./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex:10: LaTeX Error: There'
+s no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \maketitle
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex:10: LaTeX Error: There'
+s no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \maketitle
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+
+./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex:11: Package inputenc Er
+ror: Unicode character ^^[ (U+001B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \tableofcontents
+                     
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex:11: Undefined control s
+equence.
+\contentsname ->^^[$BL\<
+                        !^^[(B
+l.11 \tableofcontents
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex:11: Package inputenc Er
+ror: Unicode character ^^[ (U+001B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \tableofcontents
+                     
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex:11: Missing $ inserted.
+<inserted text> 
+                $
+l.11 \tableofcontents
+                     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+(./FunCobal_Basical_Specification_ Document_Ver1.1.0.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+ [1{c:/w32tex/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write3
+\openout3 = `"FunCobal_Basical_Specification_ Document_Ver1.1.0.toc"'.
+
+ [2] [3] [4] [5]
+(./FunCobal_Basical_Specification_ Document_Ver1.1.0.aux) ) 
+Here is how much of TeX's memory you used:
+ 1776 strings out of 480607
+ 26955 string characters out of 5906019
+ 264435 words of memory out of 5000000
+ 17713 multiletter control sequences out of 15000+600000
+ 536323 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 29i,6n,36p,325b,217s stack positions out of 5000i,500n,10000p,500000b,80000s
+ <c:/w32tex/share/te
+xmf-dist/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk><c:/w32tex/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/w32tex/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><c:/w32tex/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "FunCobal_Basical_Specification_ Document_Ver1.1.0.pdf" (5 pa
+ges, 84736 bytes).
+PDF statistics:
+ 49 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

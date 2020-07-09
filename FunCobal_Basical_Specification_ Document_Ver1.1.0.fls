@@ -1,0 +1,53 @@
+PWD C:/Users/takuy/Desktop/#å§ãÜ/èÓïÒå§ãÜ/èÓïÒå§ãÜ_åvéZã@çHäw/FunCobal
+INPUT c:/w32tex/share/texmf-dist/web2c/texmf.cnf
+INPUT c:/w32tex/share/texmf-dist/web2c/pdftex/pdflatex.fmt
+INPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.tex
+OUTPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.log
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/jarticle.cls
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/jarticle.cls
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/j-article.cls
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/j-article.cls
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/j-size10.clo
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/j-size10.clo
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/jresize10.clo
+INPUT c:/w32tex/share/texmf-dist/tex/jlatex/base/jresize10.clo
+INPUT c:/w32tex/share/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/w32tex/share/texmf-dist/tex/latex/listings/listings.cfg
+INPUT c:/w32tex/share/texmf-dist/tex/latex/listings/listings.cfg
+INPUT c:/w32tex/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT c:/w32tex/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.aux
+INPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.aux
+OUTPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.aux
+INPUT c:/w32tex/share/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.toc
+INPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.toc
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.pdf
+INPUT c:/w32tex/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.toc
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT FunCobal_Basical_Specification_ Document_Ver1.1.0.aux
+INPUT c:/w32tex/share/texmf-dist/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
+INPUT c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
