@@ -9,7 +9,9 @@
 @import "package:sample/sample.fcb" as sample1;
 @import "./sample/sample.fcb" as sample2;
 #include <"./sample.hf">;
-@using "core:FC_Sample/Component" ;
+@using "core:FC_Sample/Component";
+@using "core:ExtIO/FileIO";
+@using "corre
 
 //オブジェクト指向プログラミング
 public Class Nums{
@@ -127,4 +129,7 @@ public Class Nums{
 
 abstract Class {
     public final void RunB()
+}
+public Class Test{
+    Void 
 }
