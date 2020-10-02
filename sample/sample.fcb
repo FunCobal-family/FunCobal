@@ -23,7 +23,10 @@ public Class Nums{
     Var::Double f;
     Const::Float g;
     
-
+    /* [flags] ReturnType funcName(args)[props] 
+    flags ... static, final, async, etc.
+    props ... extends<name>, etc.
+    */
     static final Let::Int getlen(Let::Der im){
         Let::Int i;
         while(){
