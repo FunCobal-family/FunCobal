@@ -1,19 +1,33 @@
 ///Sample Code of FunCobal
 ///made by Takuya Matsunaga
-///of NAIPSS-CMSS/IntelligenceResearch
+///of Supoijar.org/IntelligenceResearch
 ///named by Mr. Suwawa
 ///24-4-2020
 ///lisenced  with *****
 
+
+//Settle of package name.
 @package "fun_cobal_sample";
+
+// import of outer program files, with settle of unique namespace.
+//with package name specifying.
 @import "package:sample/sample.fcb" as sample1;
+//with directory path specifying.
 @import "./sample/sample.fcb" as sample2;
+
+//including of header file.
 #include <"./sample.hf">;
+
+//import of core packages.
 @using "core:FC_Sample/Component";
 @using "core:ExtIO/FileIO";
-@using "corre
+@using "core:";
 
-//オブジェクト指向プログラミング
+//Set up of link outer equipments and languages.
+:net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as docker;
+:implements "fd.docker.nfc.felica" for docker;
+
+//Object Oriented Programming.
 public Class Nums{
     Let::Either a;
     Let::Der b;
@@ -23,6 +37,11 @@ public Class Nums{
     Var::Double f;
     Const::Float g;
 
+    //Type of Matrix.
+    Let::Matrix mat={};
+    //Generics.
+    Let::Matrix<Int> mat2={};
+    //
 
     //Polish Notation
     //:(operator operand,operand,...)
@@ -32,7 +51,7 @@ public Class Nums{
     Let::Int polTest = :(* 3,2,5);
     Let::Double polTest2 = :(/ :(+ 5,2),4);
     :(= (Let::Int PolTest3),:(/ :(+ 5,2),4));
-    Let::
+
 
 
     //Standard Settle of Delay
