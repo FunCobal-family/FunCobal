@@ -23,6 +23,29 @@ public Class Nums{
     Var::Double f;
     Const::Float g;
 
+
+    //Polish Notation
+    //:(operator operand,operand,...)
+    //:(function parameter,...)
+    //Next example returns 11, as Number,has type of Int.
+    //:(+ 4,5,2)
+    Let::Int polTest = :(* 3,2,5);
+    Let::Double polTest2 = :(/ :(+ 5,2),4);
+    :(= (Let::Int PolTest3),:(/ :(+ 5,2),4));
+    Let::
+
+
+    //Standard Settle of Delay
+    //:# ms
+    //Next example settle 20ms delay.
+    //:# 20
+    :# 8;
+
+    :~
+    :|
+    :^
+
+
     /* [flags] ReturnType funcName(args)[props]
     flags ... static, final, async, etc.
     props ... extends<name>, etc.
