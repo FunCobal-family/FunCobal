@@ -21,11 +21,12 @@
 //import of core packages.
 @using "core:FC_Sample/Component";
 @using "core:ExtIO/FileIO";
-@using "core:";
+@using "core:Math/StdMath";
+@using "fd:Docker";
 
 //Set up of link outer equipments and languages.
-:net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as docker;
-:implements "fd.docker.nfc.felica" for docker;
+:net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as Docker;
+:implements "fd.Docker.nfc.felica" for Docker;
 
 //Object Oriented Programming.
 public Class Nums{
@@ -38,9 +39,9 @@ public Class Nums{
     Const::Float g;
 
     //Type of Matrix.
-    Let::Matrix mat={};
+    Let::Matrix mat := {};
     //Generics.
-    Let::Matrix<Int> mat2={};
+    Let::Matrix<Int> mat2 := {};
     //
 
     //Polish Notation
@@ -48,8 +49,8 @@ public Class Nums{
     //:(function parameter,...)
     //Next example returns 11, as Number,has type of Int.
     //:(+ 4,5,2)
-    Let::Int polTest = :(* 3,2,5);
-    Let::Double polTest2 = :(/ :(+ 5,2),4);
+    Let::Int polTest := :(* 3,2,5);
+    Let::Double polTest2 := :(/ :(+ 5,2),4);
     :(= (Let::Int PolTest3),:(/ :(+ 5,2),4));
 
 
@@ -90,14 +91,17 @@ public Class Nums{
 @component(
     export ComponentTestB;
     @function(
-        [Let::Axilin <= Let::Num]::partC (input) = {
-           exp
+        [Let::Axilin <= Let::Num]::partC (input) := {
+           exp(s);
         }
     )
 )
 //外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
 @dare(
-    core.put();
+//イベント駆動プログラミング
+    STREAM dfs := Docker.out.stream();
+    FILE ff := FileIO
+    core.put("Test felica event");
 )
 //関数型プログラミング
 @function(
@@ -110,10 +114,10 @@ public Class Nums{
     }
 )
 //構造データの埋め込み・生成
-@sdata(
+@sdata[export:sample_bts](
     ./mode="bigtable",file="sample.bts",src="./data/"
 )
-@sdata(
+@sdata[export:web_test](
     ./mode="html",file="index.html",src="./a.out/",lang="ja";
     .html=head..body;
     .head=meta(charset="UTF-8")..title..link(rel="stylesheet",type="text/css",href="./style.css");
@@ -122,7 +126,7 @@ public Class Nums{
     .font=div:1(class="main")..div:2(class="sub")..div:3(div class="subst")..div:4(class="fotter");
     .div:1=nav1;
     .nav:1=div:1_1(class="title");
-    .div:1_1=a:1_1_1(href="./../path/path/somep.html");
+    .div:1_1=a:1_1_1(href="./../path/path/some_p.html");
     .a:1_1_1=div
 
 //*:
@@ -138,7 +142,7 @@ public Class Nums{
 		<div class="main">
 			<nav>
 				<div class="title">
-					<a href="./../path/path/somep.html">	
+					<a href="./../path/path/some_p.html">	
 						<div class="name">org-name</div>
 						<div class="belong">Socphesid; Special Office of Control and Prevention for High Emergency Specious Infectious Disease</div>
 					</a>
@@ -148,7 +152,7 @@ public Class Nums{
 		<div class="sub">
 			<a href="./../index.html"><nav><div class="title">
 			<div class="name"><span style="white-space: nowrap;">rel-n-some-1</span><span style="white-space: nowrap;">rel-n-some-2</span><span style="white-space: nowrap;">site</span></div><br>
-			<div class="belong"><span style="white-space: nowrap;">Special Website for</span> <span style="white-space: nowrap;">Amid Coronavirus Infectious Desease</span>; <span style="white-space: nowrap;">Covid-19 / SARS-CoV-2</span></div><br>
+			<div class="belong"><span style="white-space: nowrap;">Special Website for</span> <span style="white-space: nowrap;">Amid Coronaries Infectious Desease</span>; <span style="white-space: nowrap;">Covid-19 / SARS-CoV-2</span></div><br>
 			</div></nav></a>
 	site
 		</div>
