@@ -55,7 +55,7 @@ public Class Nums{
 
 
 
-    //Standard Settle of Delay
+    //Standard Settle of Delay same 
     //:# ms
     //Next example settle 20ms delay.
     //:# 20
