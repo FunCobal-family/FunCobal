@@ -1,1 +1,1 @@
-FanCobal；FanCoBal 第一世代(初期版)
+# FanCobal；FanCoBal 第一世代(初期版)
