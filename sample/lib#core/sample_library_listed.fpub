@@ -1,0 +1,47 @@
+#pubspec x1.1
+#hps :fcb:>>core
+
+@library>>Lang
+
+@library>>Math
+:package <StdMath>
+-path math.stdMath
+-def "標準数学ライブラリ" lang=ja
+:package <DiscMath>
+-path math.discMath
+-def "離散数学(グラフ理論、組み合わせ論etc)" lang=ja
+:package <LinMath>
+-path math.linMath
+-def "線形代数学(向量・行列etc)" lang=ja
+:package <MatMath>
+-path math.matMath
+-def "行列" lang=ja
+:package <SetMath>
+-path math.SetMath
+-def "集合" lang=ja
+:package <LogicMath>
+-path math.logicMath
+-def "論理数学" lang=ja
+:package <AlStMath>
+-path math.alStMath
+-def "代数系(群・環・体・束etc)" lang=ja
+
+@library>>IO
+:package <StdIO>
+-path io.stdIO
+:package <FileIO>
+-path io.fileIO
+:package <ExtIO>
+-path io.extIO
+
+@library>>Security
+:package OathSec
+-path sec.oath
+
+@library>>Net
+:package StdNet
+-path net.stdNet
+:package WebHttpFw
+-path net.webHttpFw
+:package Socket
+-path net.socket

@@ -1,16 +1,16 @@
-///Sample Code of FunCobal
-///made by Haruka Sato(Takuya Matsunaga)
-///of Supoijar.org/IntelligenceResearch
-///named by Mr. Suwawa
-///24-4-2020
-///lisenced with S-GLPL, but until completion of S-GLPL, apply MIT Licence instead of that.
+///Sample Code of FunCobal                                                                ^/
+///made by Haruka Sato(Takuya Matsunaga)                                                  ^/
+///of Supoijar.org/IntelligenceResearch                                                   ^/
+///named by Mr. Suwawa                                                                    ^/
+///24-4-2020                                                                               ^/
+///lisenced with S-GLPL, but until completion of S-GLPL, apply MIT Licence instead of that.^/
 
 
-//Settle of package name.
+//Settle of package name.^/
 @package "fun_cobal_sample";
 
-// import of outer program files, with settle of unique namespace.
-//with package name specifying.
+// import of outer program files, with settle of unique namespace.^/
+//with package name specifying.^/
 @import "package:sample/sample.fcb" as sample1;
 //with directory path specifying.
 @import "./sample/sample.fcb" as sample2;
@@ -18,31 +18,34 @@
 //including of header file.
 #include <"./sample.hf">;
 
-//import of core packages.
+//import of core packages.^/
 @using "core:FC_Sample/Component";
 @using "core:ExtIO/FileIO";
 @using "core:Math/StdMath";
 @using "fd:Docker";
 
-//Set up of link outer equipments and languages.
+//Set up of link outer equipments and languages. ^/
 :net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as Docker;
 :implements "fd.Docker.nfc.felica" for Docker;
 
-//Object Oriented Programming.
+
+
+
+//Object Oriented Programming.^/
 public Class Nums{
-    Let::Either a;
-    Let::Der b;
-    Let::Dem c;
-    Let::Int d;
-    Let::Num e;
-    Var::Double f;
-    Const::Float g;
+    Let::Either a `def;
+    Let::Der b `def;
+    Let::Dem c `def;
+    Let::Int d `def;
+    Let::Num e `def;
+    Var::Double f `def;
+    Const::Float g `def;
 
     //Type of Matrix.
     Let::Matrix mat := {};
     //Generics.
     Let::Matrix<Int> mat2 := {};
-    //
+    //^/
 
     //Polish Notation
     //:(operator operand,operand,...)
@@ -78,7 +81,28 @@ public Class Nums{
         return i;
     }
 }
-//コンポーネント志向プログラミング
+
+//The Exceptions.
+do{
+    /* Something code that may occur exceptions */
+    throw Exception;//throw Exception
+    raise Exception;//or for this what alias of it
+    throw SomeException;//throw Exception in type "SomeException"
+}
+catch{
+    /* Something code to do when occurred some exceptions */
+}
+catch(SomeException e){
+    /* Something code to do when occurred exceptions in type "SomeException" */
+}
+ensure{
+    /* Something code to do in regardless of raise exceptions */
+}
+else{
+    /* Something code to do when not occurred any exceptions what written rescue code */
+}
+
+//Component Oriented Programming.
 @component(
     export ComponentTestA;
     public Class PartA{
