@@ -5,9 +5,14 @@
 ///24-4-2020                                                                               ^/
 ///lisenced with S-GLPL, but until completion of S-GLPL, apply MIT Licence instead of that.^/
 
+//environment specifier(optional,for developers)
+//gen1:*.fcb, gen2:*.fcbd, gen3:*.fc
+@env : dev0,lint1.9.2,sdk0
 
 //Settle of package name.^/
 @package "fun_cobal_sample";
+
+
 
 // import of outer program files, with settle of unique namespace.^/
 //with package name specifying.^/
@@ -15,18 +20,34 @@
 //with directory path specifying.
 @import "./sample/sample.fcb" as sample2;
 
-//including of header file.
-#include <"./sample.hf">;
 
-//import of core packages.^/
+//import of the core packages.^/
 @using "core:FC_Sample/Component";
 @using "core:ExtIO/FileIO";
 @using "core:Math/StdMath";
+//with namespace in header scope
+@using "core:Net/StdNet" exSys net;
+//with namespace in global scope
+@using "core:Net/WebHttpFw"  as whf;
+
+//import of core packages of family languages
 @using "fd:Docker";
+
+
+//include limiting of importing objects or modules.
+//each of module is a group of objects
+//two sources both of module and object
+#include <`module(GenLib),URI> for net;
+//a source of module
+#include <`module(Server)> for whf;
+
+
 
 //Set up of link outer equipments and languages. ^/
 :net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as Docker;
 :implements "fd.Docker.nfc.felica" for Docker;
+
+
 
 
 

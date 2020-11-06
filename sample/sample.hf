@@ -1,3 +1,0 @@
-//環境指定(gen2の途中で.hfファイルごと潰す)
-//gen1:*.fcb, gen2:*.fcbd, gen3:*.fc
-@env : dev0,lint1.9.2,sdk0
