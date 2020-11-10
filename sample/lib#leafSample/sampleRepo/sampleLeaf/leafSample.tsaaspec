@@ -1,0 +1,48 @@
+///Library Package Specification File
+@import "core:build/spec";
+@spec(
+    Const::Struct<dynamic> spec = new specMain();
+    //'name' is Leaf name
+    spec.name = "LeafSample";
+    //'desc' is Leaf description, 
+    spec.desc="This is sample tsaaspec file for sample leaf, a FunCoBal package.";
+    //spec version, Must
+    spec.ver="1.0.0";
+    //user interface, Must: 'none' for CLI app, 'web' for web app, 'engine' for cross-platform app using engine, 'embed' for embedded system
+    spec.face = "web";
+
+    Const::Struct<dynamic> env= new specEnv();
+    env.profile = {case:"default"};
+    //or path of profile file
+    //env.profile={path:"./"};
+    //using languages
+    env.lang = ["Hardin:FunCobal","Tolte:Chestnut"];
+    //environment constraint for every lang, Optional
+    //for sdk and lint, must not use "^", and must set upper limit when settle of version
+    env.env[0] = {gen:"1",dev:"0",sdk:">=0 <1.0",lint:">=1.9.2 <2.0.0"};
+    //for default is this
+    env.env[1] = {Case:"default"};
+
+    Const::Struct<dynamic> path = new specPath();
+    //next: paths, same as default, except face,as "./wab" for web app,in spite of  "./face" for default
+    //path for Source files
+    path.src="./src";
+    //path for inner library files
+    path.Lib="./lib";
+    //path for  UI files, and the sample is for web app
+    pash.face="./web"
+    //path for binary files that compiled
+    path.bin="./bin";
+    //path for inner test codes
+    path.test="./test";
+    //path for documentations
+    path.doc="./doc";
+    //path for sample use-case
+    path.sample="./sample";
+    // path for inner tools for developers of the leaf
+    path.tool="./tool";
+    //path for resources such as images, sounds, and also
+    path.res="./res";
+
+    Const::Struct<dynamic> dependencies
+)

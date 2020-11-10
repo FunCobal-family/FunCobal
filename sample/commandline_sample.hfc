@@ -1,0 +1,36 @@
+# -H Processing System
+# 
+# -H Compiler Collection
+# 
+# -H Test Manager
+# 
+# -H AutoHardin
+# 
+# -HardingTsaa
+# hart
+# -FIDOLS
+# myk
+# -FC Shell
+# cosh
+
+# now in 'FanCobal>'
+
+# install of published library package with git URL
+hart install https://pub.harding.org/test-user/limb/leaf.git
+# additional install of core library package with git URL
+hart install https://core.harding.org/development-division/limb/leaf.git
+
+# install of published library package with package ID
+hart install sample-Leaf
+# install of published library package with FIDOLS file
+hart install ols.harding.org/sampleLeaf.fidols
+
+# update all packages you installed
+hart update all
+
+cd sample/lib#leafSample/sampleRepo/sampleLeaf
+# archive to FIDOLS file
+myk ar -o ./../sampleLeaf.fidols --s srl
+# '-o' is output file, '-s' is imput file, and 'srl' after '-s' means optional file both of Hardinfile.cosh, README.md,LICENCE.md
+cd ./../
+myk ua -o sappleLeaf_2 sampleLeaf.fidols

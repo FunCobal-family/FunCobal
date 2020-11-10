@@ -1,0 +1,6 @@
+///Package Build File
+
+@import "core:build/leaves";
+@build(
+    if(lang)
+)
