@@ -33,6 +33,7 @@
 -path io.fileIO
 :package <ExtIO>
 -path io.extIO
+-def "一般的デバイス関連(java.awt.GraphicsDeviceみたいなもの)&特殊外部デバイス操作用内部DSLへのパイプライン" lang=ja
 
 @library>>Security
 :package OathSec
