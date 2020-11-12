@@ -1,16 +1,16 @@
 # FunCobal 基本仕様原案
 
-## 前文
+## 前文 - Preamble
 
-## Preamble
+## 概要- Abstract
 
-## 概要
+この言語は、Julia言語、Dart言語、Ruby言語、及びAda言語に触発されて製作されたものであり、これらの言語及びその他の数多の諸言語を参考にしている。
 
-## Abstract
+## 名称 - Name
 
-## 名称
+「FunCobal」という名前はすわわ氏により命名された。氏によると、「Fun」は「関数型的なスタイルによる言語」に由来し、またこの言語が楽しい言語になるようにとの希望も含まれている。「Cobal」は、筆頭製作者であるHaruka Sato(Takuya Matsunaga)のニックネームに由来する。
 
-## Name
+The name "FunCobal" is named by Mr. Suwawa. According to his saying, the origin is "Fun" from "with Some Functional Style" and hope that the language will be fantastic, and "Cobal" from "Cobaltia" , the alias name of Haruka Sato(Takuya Matsunaga), chif developer of the language.
 
 ## 主要方針
 

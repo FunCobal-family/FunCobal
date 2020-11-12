@@ -1,48 +1,173 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.4.16)  23 AUG 2020 11:56
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.8.23)  12 NOV 2020 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"C:/Users/takuy/Desktop/Codes/Lang/FanCobal/doc/FunCobal_Basical_Specificatio
-n_ Document_Ver1.1.0.tex"
-
-(c:/Users/takuy/Desktop/Codes/Lang/FanCobal/doc/FunCobal_Basical_Specification_
- Document_Ver1.1.0.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-04-06>
-(c:/w32tex/share/texmf-dist/tex/jlatex/base/jarticle.cls)
-(c:/w32tex/share/texmf-dist/tex/jlatex/base/j-article.cls
-Document Class: j-article 2000/05/19 v1.4b Standard JLaTeX document class
-(c:/w32tex/share/texmf-dist/tex/jlatex/base/j-size10.clo
-File: j-size10.clo 2000/05/19 v1.4b Standard JLaTeX file (size option)
-
-(c:/w32tex/share/texmf-dist/tex/jlatex/base/jresize10.clo))
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+**"FunCobal_Basical_Specification_ Document_Ver1.1.0.tex"
+(./FunCobal_Basical_Specification_ Document_Ver1.1.0.tex
+pLaTeX2e <2020-04-12> (based on LaTeX2e <2020-02-02> patch level 5)
+L3 programming layer <2020-08-07>
+(c:/texlive/2020/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2020/01/03 v1.8e Standard pLaTeX class
+\c@@paper=\count167
+(c:/texlive/2020/texmf-dist/tex/platex/base/jsize10.clo
+File: jsize10.clo 2020/01/03 v1.8e Standard pLaTeX file (size option)
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 615.
+\toclineskip=\dimen150
+\@lnumwidth=\dimen151
+\bibindent=\dimen152
+\heisei=\count176
 )
-Runaway argument?
-{^^[$B;29MJ88\newcommand \indexname {^^[$B:w0z^^[(B} \newcommand \figurename \E
-TC.
-! File ended while scanning use of \@argdef.
-<inserted text> 
-                \par 
-l.2 \usepackage
-               {listings} 
-Here is how much of TeX's memory you used:
- 220 strings out of 480607
- 3101 string characters out of 5906019
- 239641 words of memory out of 5000000
- 16197 multiletter control sequences out of 15000+600000
- 532338 words of font info for 24 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 29i,0n,21p,289b,36s stack positions out of 5000i,500n,10000p,500000b,80000s
+(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+(c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\lst@mode=\count177
+\lst@gtempboxa=\box61
+\lst@token=\toks17
+\lst@length=\count178
+\lst@currlwidth=\dimen153
+\lst@column=\count179
+\lst@pos=\count180
+\lst@lostspace=\dimen154
+\lst@width=\dimen155
+\lst@newlines=\count181
+\lst@lineno=\count182
+\lst@maxwidth=\dimen156
 
-!  ==> Fatal error occurred, no output PDF file produced!
+(c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count183
+\lst@skipnumbers=\count184
+\lst@framebox=\box62
+)
+(c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-09-24 L3 backend support: dvips
+
+
+! LaTeX Error: Mismatched LaTeX support files detected.
+               Loading aborted!.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43   }
+        
+? 
+) (./FunCobal_Basical_Specification_ Document_Ver1.1.0.aux)
+\openout1 = `"FunCobal_Basical_Specification_ Document_Ver1.1.0.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+\c@lstlisting=\count185
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \maketitle
+               
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \maketitle
+               
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
+(./FunCobal_Basical_Specification_ Document_Ver1.1.0.toc
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `"FunCobal_Basical_Specification_ Document_Ver1.1.0.toc"'.
+
+ [1
+
+] [2]
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
+ [3] [4]
+[5] (./FunCobal_Basical_Specification_ Document_Ver1.1.0.aux) ) 
+Here is how much of TeX's memory you used:
+ 1720 strings out of 481404
+ 24134 string characters out of 5924636
+ 271478 words of memory out of 5000000
+ 17549 multiletter control sequences out of 15000+600000
+ 545486 words of font info for 69 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 28i,6n,36p,337b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on "FunCobal_Basical_Specification_ Document_Ver1.1.0.dvi" (5 pa
+ges, 8448 bytes).
