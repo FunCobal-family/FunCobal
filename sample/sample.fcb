@@ -53,13 +53,13 @@
 
 
 //Object Oriented Programming.^/
-public Class Nums{
-    Let::Either a `def;
+Public::Class Nums{
+    Let::Either -var a `def;
     Let::Der b `def;
     Let::Dem c `def;
     Let::Int d `def;
-    Let::Num e `def;
-    Var::Double f `def;
+    Let::Num -var  e  `def;
+    Var::Double -fin f `def;
     Const::Float g `def;
 
     //Type of Matrix.

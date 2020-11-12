@@ -12,31 +12,33 @@
 
 The name "FunCobal" is named by Mr. Suwawa. According to his saying, the origin is "Fun" from "with Some Functional Style" and hope that the language will be fantastic, and "Cobal" from "Cobaltia" , the alias name of Haruka Sato(Takuya Matsunaga), chif developer of the language.
 
-## 主要方針
+## 主要方針 - Main 
 
 - 小規模開発から大規模開発まで
 - フロントエンドからバックエンドまで
 - 汎用から科学技術計算,計算科学,数値解析まで
 
-## 主要要件
+## 主要要件 - Main 
 
 - リスク耐性
 
-## マルチパラダイム言語
-
-## Multi-Paradigm Language
+## マルチパラダイム言語 - Multi-Paradigm Language
 
 オブジェクト指向プログラミング  
 object-oriented programming  
 └ 　プロトタイプベースプログラミング
 
-## 型体系
+## 型体系 - The Type System
 
 型(データ型)はオブジェクトであり、包含的派生型による型ツリーを構築する。
 
-## オブジェクト
+## オブジェクト - The Object
 
-クラスはオブジェクトの一種であり、
 
-- 構造体：変数・定数のみでメソッドのないオブジェクト。エイリアスとしてstructをもつ。
+- 構造体：フィールドのみでメソッドのないオブジェクト。エイリアスとしてStructをもつ。コンストラクタは任意である。コンストラクタのない場合は、インスタンス作成時
+- クラス：フィールド・コンストラクタの他にメソッドをもつオブジェクト。エイリアスとしてClassをもつ。
 - 連続体：
+
+## 修飾子 - 
+
+## 識別子 - Identifier
