@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="FunCobal_Language_Logo.svg">
+  <defs
+     id="defs2">
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-2" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-47.923875"
+     inkscape:cy="210.30912"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1842"
+     inkscape:window-height="1051"
+     inkscape:window-x="1669"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-97)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4518"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4520"><rect
+           id="rect4522"
+           width="656.59918"
+           height="637.40625"
+           x="43.436558"
+           y="29.605837" /></flowRegion><flowPara
+         id="flowPara4524"></flowPara></flowRoot>    <text
+       id="text4533"
+       y="317.22281"
+       x="8.0506973"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:296.91891479px;line-height:125%;font-family:Cambria;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.02502227"
+       xml:space="preserve"
+       transform="scale(1.1106805,0.90034894)"><tspan
+         id="tspan4531"
+         y="317.22281"
+         x="8.0506973"
+         sodipodi:role="line"
+         style="stroke-width:2.02502227"><tspan
+           id="tspan4529"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:296.91891479px;font-family:Cambria;fill:#000000;stroke-width:2.02502227"
+           dy="0"
+           dx="0">Γ</tspan></tspan></text>
+    <text
+       id="text4539"
+       y="282.83746"
+       x="130.96413"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:26.32152557px;line-height:125%;font-family:SimSun;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.79210377"
+       xml:space="preserve"
+       transform="scale(0.98292975,1.0173667)"><tspan
+         id="tspan4537"
+         y="282.83746"
+         x="130.96413"
+         sodipodi:role="line"
+         style="stroke-width:1.79210377"><tspan
+           id="tspan4535"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:26.32152557px;font-family:SimSun;fill:#000000;stroke-width:1.79210377"
+           dy="0"
+           dx="0"> </tspan></tspan></text>
+    <text
+       id="text4561"
+       y="-100.69687"
+       x="162.35043"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:168.74752808px;line-height:125%;font-family:Cambria;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.15087831"
+       xml:space="preserve"
+       transform="matrix(0,1.0395268,-0.96197616,0,0,0)"><tspan
+         id="tspan4559"
+         y="-100.69687"
+         x="162.35043"
+         sodipodi:role="line"
+         style="stroke-width:1.15087831"><tspan
+           id="tspan4557"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:168.74752808px;font-family:Cambria;fill:#000000;stroke-width:1.15087831"
+           dy="0"
+           dx="0">φ</tspan></tspan></text>
+    <text
+       id="text4567"
+       y="205.63454"
+       x="93.556801"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.88606763px;line-height:125%;font-family:SimSun;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan4565"
+         y="205.63454"
+         x="93.556801"
+         sodipodi:role="line"
+         style="stroke-width:0.26458332"><tspan
+           id="tspan4563"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.88606763px;font-family:SimSun;fill:#000000;stroke-width:0.26458332"
+           dy="0"
+           dx="0"> </tspan></tspan></text>
+  </g>
+</svg>
