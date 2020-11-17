@@ -7,6 +7,7 @@
 ![GitHub](https://img.shields.io/github/license/FunCobal-family/FunCobal?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/FunCobal-family/FunCobal)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/FunCobal-family/FunCobal?style=plastic)
+![GitHub commits since tagged version](https://img.shields.io/github/commits-since/FunCobal-family/FunCobal/Test-v0.0.0.2dev0-d181120)
 
 ## 少々テスト
 
