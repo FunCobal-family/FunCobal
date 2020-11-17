@@ -1,0 +1,37 @@
+//マンデルフレミングモデルの基本的なモデルのFunCobalによる実装サンプル
+
+Public::Class MundellFlemingModel{
+  //基礎変数(フィールド実装)
+  Let::NumericModel y_ def as "実質所得";
+  Let::NumericModel g_ def as "実質消費支出";
+  Let::NumericModel r def as "国内金利";
+  Let::NumericModel rst def as "外国金利";
+  Let::NumericModel  e def as "邦貨建て為替レート";
+  Let::NumericModel  g_ def as "実質政府支出";
+  Let::NumericModel  m_ def as "貨幣供給量";
+
+  //複合変数(依存変数/メソッド実装)
+  lately.Let::NumericModel c_(y_){} def as "実質消費支出"
+  lately.Let::NumericModel x_(e){} def as "実質輸出"
+  lately.Let::NumericModel mst_(e,y_){} def as "外貨建て実質輸入"
+  lately.Let::NumericModel l_(r,y_){} def as "貨幣需要量"
+  lately.Let::NumericModel f_((r)-(rst)){} def as "資本収支"
+
+  //X(e)-eM*(e,Y)：純輸出（あるいは貿易収支、もしくは経常収支）
+}
+
+//関係式
+lately.MundellFlemingModel is_curve(MundellFlemingModel model){
+  model.y_ = model.c_(model.y_) + model.i_(model.r) + model.g_ + model.x_(model.e) + model.e * model.mst_(model.e, model.y_);
+} def as "IS曲線"
+lately.MundellFlemingModel lm_curve(MundellFlemingModel model){
+   model.m_ = model.l_(model.r, model.y_);
+} def as "LM曲線"
+lately.MundellFlemingModel bp_curve(MundellFlemingModel model){
+  model.x_(model.e) - model.e * model.mst_(model.e, model.y_) + model.f_((model.r) - (model.rst)) = 0;
+} def as "国際収支の均衡条件（BP曲線）"
+
+//定義ラベルの表示
+print(MundellFlemingModel.y_~::label(def));//  Let::NumericModel y_ means::実質所得
+
+//なおマンデルフレミングモデルについては https://ja.wikipedia.org/wiki/マンデルフレミングモデル を参照されたい
