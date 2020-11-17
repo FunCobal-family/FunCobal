@@ -6,7 +6,7 @@
 
 ![GitHub](https://img.shields.io/github/license/FunCobal-family/FunCobal?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/FunCobal-family/FunCobal)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/FunCobal-family/FunCobal)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/FunCobal-family/FunCobal?style=plastic)
 
 ## regular update
 
