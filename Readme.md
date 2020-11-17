@@ -2,12 +2,25 @@
 
 # FanCobal；FanCoBal 第一世代(初期版)
 
+![GitHub](https://img.shields.io/github/license/FunCobal-family/FunCobal?style=plastic&label=%E4%BD%BF%E7%94%A8%E8%A8%B1%E8%AB%BE%E6%9B%B8)
+![GitHub repo size](https://img.shields.io/github/repo-size/FunCobal-family/FunCobal?label=%E3%83%AC%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA)
+![GitHub language count](https://img.shields.io/github/languages/count/FunCobal-family/FunCobal?label=%E4%BD%BF%E7%94%A8%E8%A8%80%E8%AA%9E%E6%95%B0)
+![GitHub top language](https://img.shields.io/github/languages/top/FunCobal-family/FunCobal?label=%E6%9C%80%E5%A4%9A%E4%BD%BF%E7%94%A8%E8%A8%80%E8%AA%9E)
+![GitHub last commit](https://img.shields.io/github/last-commit/Funcobal-family/FunCobal?label=%E6%9C%80%E7%B5%82%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E6%97%A5)
+![GitHub Release Date](https://img.shields.io/github/release-date/FunCobal-family/FunCobal?label=%E6%9C%80%E7%B5%82%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E6%97%A5)
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/FunCobal-family/FunCobal?style=plastic&label=%E6%9C%80%E7%B5%82%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9)
+![GitHub commits since tagged version](https://img.shields.io/github/commits-since/FunCobal-family/FunCobal/Test-v0.0.0.2dev0-d181120?label=%E6%9C%80%E7%B5%82%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%8B%E3%82%89%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E6%95%B0)
+![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/FunCobal-family/Funcobal?label=Hacktoberfest%E6%A2%B1%E6%9D%9F%E6%B8%88%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/FunCobal-family/FunCobal?label=closed+issue)
+
+![GitHub contributors](https://img.shields.io/github/contributors/FunCobal-family/FunCobal?label=%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E8%80%85%E6%95%B0)
+![GitHub contributors](https://img.shields.io/github/contributors-anon/FunCobal-family/FunCobal?label=%E9%96%8B%E7%99%BA%E5%8F%82%E5%8A%A0%E8%80%85%E6%95%B0%2F%E5%8C%BF%E5%90%8D%E5%90%AB%E3%82%80)
+![Discord](https://img.shields.io/discord/729249179167358976?style=plastic&label=%E9%96%8B%E7%99%BA%E8%80%85Chat%28Discord%2F%E3%80%8C%E8%A8%80%E8%AA%9E%E3%81%AE%E6%B3%A2%E6%AD%A2%E5%A0%B4%E3%80%8D%E5%86%85%E3%80%8C%23%E4%BA%BA%E5%B7%A5%E8%A8%80%E8%AA%9E%E3%81%AE%E9%9B%86%E5%90%88%E5%A0%B4%E3%80%8D%29)
+
 <p style="clear:both"></p>
 
-![GitHub](https://img.shields.io/github/license/FunCobal-family/FunCobal?style=plastic)
-![GitHub repo size](https://img.shields.io/github/repo-size/FunCobal-family/FunCobal)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/FunCobal-family/FunCobal?style=plastic)
-![GitHub commits since tagged version](https://img.shields.io/github/commits-since/FunCobal-family/FunCobal/Test-v0.0.0.2dev0-d181120)
+## badges
 
 ## 少々テスト
 
