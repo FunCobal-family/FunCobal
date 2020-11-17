@@ -4,6 +4,10 @@
 
 <p style="clear:both"></p>
 
+![GitHub](https://img.shields.io/github/license/FunCobal-family/FunCobal?style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/FunCobal-family/FunCobal)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/FunCobal-family/FunCobal)
+
 ## regular update
 
 一日一回以上コミットする。変更部分のない場合は必要ない。次に示す定時に行い、この各定時毎のうちの最初のコミットを regular update とする。
