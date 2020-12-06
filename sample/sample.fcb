@@ -44,8 +44,8 @@
 
 
 //Set up of link outer equipments and languages. ^/
-:net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as Docker;
-:implements "fd.Docker.nfc.felica" for Docker;
+:net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as DockerF;
+:implements "fd.Docker.nfc.felica" for DockerF;
 
 
 
