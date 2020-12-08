@@ -28,6 +28,14 @@ The name "FunCobal" is named by Mr. Suwawa. According to his saying, the origin 
 object-oriented programming  
 └ 　プロトタイプベースプログラミング
 
+## オブジェクト - The Object
+
+総てのリテラルはオブジェクトである。
+
+- 構造体：フィールドのみでメソッドのないオブジェクト。エイリアスとして Struct をもつ。コンストラクタは任意である。コンストラクタのない場合は、フィールド宣言時のデータがインスタンス作成時にインスタンスにコピーされる。
+- クラス：フィールド・コンストラクタの他にメソッドをもつオブジェクト。エイリアスとして Class をもつ。コンストラクタ必須である。
+- 連続体：
+
 ## 変数群 - Variable Models
 
 ### 型体系 - The Type System
@@ -35,14 +43,6 @@ object-oriented programming
 型(データ型)はオブジェクトであり、包含的派生型による型ツリーを構築する。
 
 詳細は[FunCobal 型システム.md](./FunCobal型システム.md)(あるいは[FunCobal 型システム.pptx](./FunCobal型システム.pptx))を参照のこと。型システム .md の方が最新である。
-
-## オブジェクト - The Object
-
-総てのリテラルはオブジェクトである。
-
-- 構造体：フィールドのみでメソッドのないオブジェクト。エイリアスとして Struct をもつ。コンストラクタは任意である。コンストラクタのない場合は、インスタンス作成時
-- クラス：フィールド・コンストラクタの他にメソッドをもつオブジェクト。エイリアスとして Class をもつ。
-- 連続体：
 
 ### 変数種名 - Kind of Variable Models
 
@@ -61,3 +61,27 @@ object-oriented programming
 ## 識別子 - Identifier
 
 ## 注釈子 - Annotation
+
+### ヘッダアノテーション - Header Annotation
+
+@package, @env, @depend アノテーションは単独ファイルでコンパイル/実行する場合には必要。ライブラリパッケージを構成している場合は tsaaspec ファイルへの記述で十分。
+
+- @package: 　その属するパッケージ名を指定する。
+- @env: 　動作環境を指定する。
+- @depend: 　依存パッケージを指定する。
+- @import: 　パッケージ又はローカルのプログラムファイルをインポートする。
+- #include: 　@depend アノテーションの追加項目を指定する。@depend アノテーションで指定した依存パッケージのうち特定のモジュールのみの依存の場合に、その情報を指定して追加モジュールを限定する。
+
+### パラダイムアノテーション - Paradigm Annotation
+
+- @function
+- @component
+
+### 言語間アノテーション - Inter-language Annotation
+
+- @using
+
+### 特殊操作アノテーション - Special-operation Annotation
+
+- @dare
+- @sdata

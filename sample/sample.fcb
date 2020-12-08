@@ -22,16 +22,16 @@
 
 
 //import of the core packages.^/
-@using "core:FC_Sample/Component";
-@using "core:ExtIO/FileIO";
-@using "core:Math/StdMath";
+@depend "core:FC_Sample/Component";
+@depend "core:ExtIO/FileIO";
+@depend "core:Math/StdMath";
 //with namespace in header scope
-@using "core:Net/StdNet" exSys net;
+@depend "core:Net/StdNet" h.as net;
 //with namespace in global scope
-@using "core:Net/WebHttpFw"  as whf;
+@depend "core:Net/WebHttpFw" as whf;
 
 //import of core packages of family languages
-@using "fd:Docker";
+@depend "fd:Docker";
 
 
 //include limiting of importing objects or modules.
@@ -221,9 +221,54 @@ else{
 )
 
 
-abstract Class {
-    public final void RunB()
+abstract Class AbsTest{
+    public final void RunB();
 }
-public Class Test{
-    Void 
+public Class Test extends AbsTest{
+    Void runB(){
+        //actual code
+    }
 }
+
+
+@using Sub:fd (
+    //code written in fDocker(DSL of FunCobal,lang bind of Hardin Namespace)
+
+)
+
+
+Auto::Num input=2;
+@using Sub:fDocker.src:"./sampleFD.fd" [{setState(input);},return for Auto::Boolean output]
+//fDocker source code file including
+if(output){
+
+}else{
+
+}
+
+
+@using Sub:tex (
+    //code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
+
+)
+
+
+@using This:hjr(
+    //code written in Hjerbata(lang bind of Hardin Namespace)
+
+)
+
+
+@using Tolte:Chestnut(
+    //code written in Chestnut(lang bind of tolte Namespace)
+
+)
+
+
+
+
+@using Sub: (
+    //code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
+
+)
+
