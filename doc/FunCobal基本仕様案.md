@@ -2,23 +2,35 @@
 
 ## 前文 - Preamble
 
+この言語は、外観はシンプルであり、かつそれでいて内側は複雑である。
+
+Ruby を超える楽しさ、C 言語の速度、MATRAB や Mathematica のような数式になじんだ記述、Julia や Haskell、Octave のような強力な数式処理、Ruby のような関数型プログラミングと命令型プログラミングが絶妙に調和されたデザイン、Dart のようなクロスプラットフォーム、Ruby や Dart のような実用性、Ruby のような強力な正規表現とそれに裏付けられた文字列処理、Ruby や Lua のようなグルー性、Dart のようなクラウドコンピューティング、Dart のような簡潔な UI 記述を併せ持つ言語を求めてこの言語を設計した。
+
+我々は美的であり、貪欲である。可能性を追い求めて。
+
 ## 概要- Abstract
 
-この言語は、Julia 言語、Dart 言語、Ruby 言語、及び Ada 言語に触発されて製作されたものであり、これらの言語及びその他の数多の諸言語を参考にしている。
+この言語は、Julia ,Dart ,及び Ruby に触発されて製作されたものであり、Julia, Dart, Ruby, Ada, Haskell, 及び OCaml の影響を強く受けている。また、これらの言語及びその他の数多の諸言語を参考にしている。
+
+汎用機能と特化型機能を兼ね備えている超高級言語である。分散処理・並列処理や数理数式処理・科学技術計算・統計解析に特化しているほか、グラフィック・空間モデル処理、ハードウェア(インターフェース等)制御、組込システム(センサ/アクチュエータ)制御、文字列処理、データ(構造データ/データベース)処理、サーバ処理等にも幅広くフォーカスされている。手続き型と関数型の性質を兼ね合わせた真のクロスプラットフォーム言語である。
+
+簡潔かつ分かりやすい記法で扱いやすく、また数式処理等はそれぞれになじんだ記法が採用されており、複雑な数式やアルゴリズムをストレスなく自然、シンプルかつリーダブルに記述できる。加えて-O3/-O4 C lang に匹敵する高速性(処理系への最上級要求事項)がある。
+
+本文書ではこの言語の全てを体系的に説明する。
 
 ## 名称 - Name
 
-「FunCobal」という名前はすわわ氏により命名された。氏によると、「Fun」は「関数型的なスタイルによる言語」に由来し、またこの言語が楽しい言語になるようにとの希望も含まれている。「Cobal」は、筆頭製作者である Haruka Sato(Takuya Matsunaga)のニックネームに由来する。
+「FunCobal」という名前はすわわ氏により命名された。氏によると、「Fun」は「関数型的なスタイルによる言語」に由来し、またこの言語が楽しい言語になるようにとの希望も含まれている。「Cobal」は、筆頭製作者である Haruka Sato(Takuya Matsunaga)のニックネームの一つである「Cobaltia」に由来する。
 
-The name "FunCobal" is named by Mr. Suwawa. According to his saying, the origin is "Fun" from "with Some Functional Style" and hope that the language will be fantastic, and "Cobal" from "Cobaltia" , the alias name of Haruka Sato(Takuya Matsunaga), chif developer of the language.
+The name "FunCobal" is named by Mr. Suwawa. According to his saying, the origin is "Fun" from "with Some Functional Style" and hope that the language will be fantastic, and "Cobal" from "Cobaltia" , the alias name of Haruka Sato(Takuya Matsunaga), chief developer of the language.
 
-## 主要方針 - Main
+## 主要方針 - Main Policy
 
 - 小規模開発から大規模開発まで
 - フロントエンドからバックエンドまで
 - 汎用から科学技術計算,計算科学,数値解析まで
 
-## 主要要件 - Main
+## 主要要件 - Main Requirement
 
 - リスク耐性
 
@@ -36,6 +48,10 @@ object-oriented programming
 - クラス：フィールド・コンストラクタの他にメソッドをもつオブジェクト。エイリアスとして Class をもつ。コンストラクタ必須である。
 - 連続体：
 - 多様体:少なくとも局所的には座標系が定義できるオブジェクト。エイリアスとして Fold をもつ。シェイプやコンポーネント、CG モデルや地理空間データなどがある。
+
+## 識別名 - Modified Name
+
+ソースコードは総て Unicode で記述され処理される。 変数群や関数群などの総ての識別子は Unicode で記述し、UTF-8 で保存
 
 ## 変数群 - Variable Models
 
@@ -57,6 +73,13 @@ object-oriented programming
 
 ### 変数群宣言
 
+変数群は、変数種名と型名を`::`で結合し、宣言するべき変数群の識別名と半角空白を開けて前置する。識別名(同時に初期化たる代入を行う場合にはその終端)の後には同じく半角空白を開けて`\def`を記述することが望ましい。
+
+```FunCobal
+Let::Int a \def;
+FixedExpr::Int b=30 \def;
+```
+
 ## 関数群
 
 ### ルーチン
@@ -73,8 +96,6 @@ object-oriented programming
 参照透過性をもち、副作用をもたない、計算や処理の定義。関数型の部分で関数という場合はこちらを指す。
 
 ## 識別子 - Identifier
-
-ソースコードは総て Unicode で記述され処理される。 変数群や関数群などの総ての識別子は Unicode で記述し、UTF-8 で保存
 
 ## 指定子
 
@@ -116,7 +137,7 @@ object-oriented programming
 
 ### 指定子付き型のエイリアス
 
-"dynamic." + "::Either" == "::Dynamic"
+型に対する指定子のうち一部は、エイリアスたる型が定義されている。例えば、動的性を与える静動指定子`dynamic`は`Either`型と結合し`Dynamic`型を形成する。
 
 ### 非同期処理・遅延評価の例示コード
 
