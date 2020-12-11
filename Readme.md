@@ -19,6 +19,7 @@
 ![Discord](https://img.shields.io/discord/729249179167358976?style=plastic&label=%E9%96%8B%E7%99%BA%E8%80%85Chat%28Discord%2F%E3%80%8C%E8%A8%80%E8%AA%9E%E3%81%AE%E6%B3%A2%E6%AD%A2%E5%A0%B4%E3%80%8D%E5%86%85%E3%80%8C%23%E4%BA%BA%E5%B7%A5%E8%A8%80%E8%AA%9E%E3%81%AE%E9%9B%86%E5%90%88%E5%A0%B4%E3%80%8D%29)
 
 <p style="clear:both"></p>
+
 ## 前文 - Preamble
 
 この言語は、外観はシンプルであり、かつそれでいて内側は複雑である。
