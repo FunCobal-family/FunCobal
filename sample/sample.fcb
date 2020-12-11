@@ -260,10 +260,19 @@ if(output){
 
 
 @using Tolte:Chestnut(
-    //code written in Chestnut(lang bind of tolte Namespace)
+    //code written in Chestnut(lang bind of Tolte Namespace)
 
 )
 
+@using Google:Dart(
+    //code written in Dart(lang bind of Google Namespace)
+
+)
+
+@using Google:Go(
+    //code written in Go lang(lang bind of Google Namespace)
+
+)
 
 
 
