@@ -1,5 +1,58 @@
 # FunCobal 基本仕様原案
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [前文 - Preamble](#%E5%89%8D%E6%96%87---preamble)
+- [概要- Abstract](#%E6%A6%82%E8%A6%81--abstract)
+- [名称 - Name](#%E5%90%8D%E7%A7%B0---name)
+- [主要方針 - Main Policy](#%E4%B8%BB%E8%A6%81%E6%96%B9%E9%87%9D---main-policy)
+- [主要要件 - Main Requirement](#%E4%B8%BB%E8%A6%81%E8%A6%81%E4%BB%B6---main-requirement)
+- [マルチパラダイム言語 - Multi-Paradigm Language](#%E3%83%9E%E3%83%AB%E3%83%81%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0%E8%A8%80%E8%AA%9E---multi-paradigm-language)
+- [オブジェクト - The Object](#%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88---the-object)
+- [識別名 - Modified Name](#%E8%AD%98%E5%88%A5%E5%90%8D---modified-name)
+- [系列言語形式名前空間](#%E7%B3%BB%E5%88%97%E8%A8%80%E8%AA%9E%E5%BD%A2%E5%BC%8F%E5%90%8D%E5%89%8D%E7%A9%BA%E9%96%93)
+- [変数群 - Variable Models](#%E5%A4%89%E6%95%B0%E7%BE%A4---variable-models)
+  - [型体系 - The Type System](#%E5%9E%8B%E4%BD%93%E7%B3%BB---the-type-system)
+  - [変数種名 - Kind of Variable Models](#%E5%A4%89%E6%95%B0%E7%A8%AE%E5%90%8D---kind-of-variable-models)
+  - [変数群宣言](#%E5%A4%89%E6%95%B0%E7%BE%A4%E5%AE%A3%E8%A8%80)
+- [関数群](#%E9%96%A2%E6%95%B0%E7%BE%A4)
+  - [ルーチン](#%E3%83%AB%E3%83%BC%E3%83%81%E3%83%B3)
+    - [ミクスイン](#%E3%83%9F%E3%82%AF%E3%82%B9%E3%82%A4%E3%83%B3)
+  - [純関数](#%E7%B4%94%E9%96%A2%E6%95%B0)
+- [リテラル表現](#%E3%83%AA%E3%83%86%E3%83%A9%E3%83%AB%E8%A1%A8%E7%8F%BE)
+- [基本構文](#%E5%9F%BA%E6%9C%AC%E6%A7%8B%E6%96%87)
+- [附属子類](#%E9%99%84%E5%B1%9E%E5%AD%90%E9%A1%9E)
+  - [識別子 - Identifier](#%E8%AD%98%E5%88%A5%E5%AD%90---identifier)
+  - [指定子](#%E6%8C%87%E5%AE%9A%E5%AD%90)
+    - [アクセス権指定子](#%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%A8%A9%E6%8C%87%E5%AE%9A%E5%AD%90)
+    - [静動指定子](#%E9%9D%99%E5%8B%95%E6%8C%87%E5%AE%9A%E5%AD%90)
+    - [型代入指定子](#%E5%9E%8B%E4%BB%A3%E5%85%A5%E6%8C%87%E5%AE%9A%E5%AD%90)
+    - [特殊処理指定子](#%E7%89%B9%E6%AE%8A%E5%87%A6%E7%90%86%E6%8C%87%E5%AE%9A%E5%AD%90)
+    - [指定子付き型のエイリアス](#%E6%8C%87%E5%AE%9A%E5%AD%90%E4%BB%98%E3%81%8D%E5%9E%8B%E3%81%AE%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%82%B9)
+  - [修飾子 - Modifier](#%E4%BF%AE%E9%A3%BE%E5%AD%90---modifier)
+  - [注釈子 - Annotation](#%E6%B3%A8%E9%87%88%E5%AD%90---annotation)
+    - [ヘッダアノテーション - Header Annotation](#%E3%83%98%E3%83%83%E3%83%80%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3---header-annotation)
+    - [パラダイムアノテーション - Paradigm Annotation](#%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3---paradigm-annotation)
+    - [言語間アノテーション - Inter-language Annotation](#%E8%A8%80%E8%AA%9E%E9%96%93%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3---inter-language-annotation)
+    - [数理アノテーション - Mathematical-scientific Annotation](#%E6%95%B0%E7%90%86%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3---mathematical-scientific-annotation)
+    - [特殊操作アノテーション - Special-operation Annotation](#%E7%89%B9%E6%AE%8A%E6%93%8D%E4%BD%9C%E3%82%A2%E3%83%8E%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3---special-operation-annotation)
+- [関数型](#%E9%96%A2%E6%95%B0%E5%9E%8B)
+  - [純関数の性質](#%E7%B4%94%E9%96%A2%E6%95%B0%E3%81%AE%E6%80%A7%E8%B3%AA)
+  - [遅延評価](#%E9%81%85%E5%BB%B6%E8%A9%95%E4%BE%A1)
+- [文字列処理](#%E6%96%87%E5%AD%97%E5%88%97%E5%87%A6%E7%90%86)
+  - [正規表現](#%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE)
+- [並行処理・並列処理・分散処理](#%E4%B8%A6%E8%A1%8C%E5%87%A6%E7%90%86%E3%83%BB%E4%B8%A6%E5%88%97%E5%87%A6%E7%90%86%E3%83%BB%E5%88%86%E6%95%A3%E5%87%A6%E7%90%86)
+  - [非同期処理](#%E9%9D%9E%E5%90%8C%E6%9C%9F%E5%87%A6%E7%90%86)
+  - [高階関数](#%E9%AB%98%E9%9A%8E%E9%96%A2%E6%95%B0)
+  - [並行処理](#%E4%B8%A6%E8%A1%8C%E5%87%A6%E7%90%86)
+  - [並列処理](#%E4%B8%A6%E5%88%97%E5%87%A6%E7%90%86)
+  - [分散処理](#%E5%88%86%E6%95%A3%E5%87%A6%E7%90%86)
+- [例外処理](#%E4%BE%8B%E5%A4%96%E5%87%A6%E7%90%86)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 前文 - Preamble
 
 この言語は、外観はシンプルであり、かつそれでいて内側は複雑である。
