@@ -37,7 +37,7 @@
 //include limiting of importing objects or modules.
 //each of module is a group of objects
 //two sources both of module and object
-#include <`module(GenLib),URI> for net;
+#include <`module(GenLib), URI> for net;
 //a source of module
 #include <`module(Server)> for whf;
 
@@ -53,7 +53,7 @@
 
 
 //Object Oriented Programming.^/
-Public::Class Nums{
+Public::Class Nums {
     Let::Either a \def;
     Let::Der b \def;
     Let::Dem c \def;
@@ -63,9 +63,9 @@ Public::Class Nums{
     Const::Float g \def;
 
     //Type of Matrix.
-    Let::Matrix mat := {};
+    Let::Matrix mat :=  {};
     //Generics.
-    Let::Matrix<Int> mat2 := {};
+    Let::Matrix<Int> mat2 :=  {};
     //^/
 
     //Polish Notation
@@ -94,9 +94,9 @@ Public::Class Nums{
     flags ... static, final, async, etc.
     props ... extends<name>, etc.
     */
-    static final Let::Int getlen(Let::Der im){
+    Int static.final.getlen(Der im) {
         Let::Int i;
-        while(){
+        while() {
 
         }
         return i;
@@ -104,65 +104,69 @@ Public::Class Nums{
 }
 
 //The Exceptions.
-do{
+do {
     /* Something code that may occur exceptions */
     throw Exception;//throw Exception
     raise Exception;//or for this what alias of it
     throw SomeException;//throw Exception in type "SomeException"
 }
-catch{
+catch {
     /* Something code to do when occurred some exceptions */
 }
-catch(SomeException e){
+catch (SomeException e) {
     /* Something code to do when occurred exceptions in type "SomeException" */
 }
-ensure{
+ensure {
     /* Something code to do in regardless of raise exceptions */
 }
-else{
+else {
     /* Something code to do when not occurred any exceptions what written rescue code */
 }
 
 //Component Oriented Programming.
-@component(
+@component (
     export ComponentTestA;
-    public Class PartA{
+    public.Class PartA {
         //contents
-    }
-    public Class PartB{
+    }   
+    public.Class PartB {
         //contents
     }
 )
-@component(
+@component (
     export ComponentTestB;
+    im PartC{
+
+    }
     @function(
-        [Let::Axilin <= Let::Num]::partC (input) := {
+
+        Axilin (input) :=  {
            exp(s);
         }
     )
 )
 //外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
-@dare(
+@dare (
 //イベント駆動プログラミング
-    STREAM dfs := Docker.out.stream();
-    FILE ff := FileIO
+    Let::Stream dfs := Docker.out.stream();
+    Let::File ff := FileIO
     core.put("Test felica event");
 )
 //関数型プログラミング
-@function(
-    [Let::Int <= Let::Int] factor(n) = {
-        if (n>0) {
+@function (
+    Int Let::factor(Int n) :=  {
+        if (n>0)  {
             n * factor(n - 1)
-        } else {
+        } else  {
             1
         }
     }
 )
 //構造データの埋め込み・生成
-@sdata[export:sample_bts](
+@sdata [export:sample_bts] (
     ./mode="bigtable",file="sample.bts",src="./data/"
 )
-@sdata[export:web_test](
+@sdata [export:web_test] (
     ./mode="html",file="index.html",src="./a.out/",lang="ja";
     .html=head..body;
     .head=meta(charset="UTF-8")..title..link(rel="stylesheet",type="text/css",href="./style.css");
@@ -221,11 +225,11 @@ else{
 )
 
 
-abstract Class AbsTest{
+abstract Class AbsTest {
     public final void RunB();
 }
-public Class Test extends AbsTest{
-    Void runB(){
+public Class Test extends AbsTest {
+    Void runB() {
         //actual code
     }
 }
@@ -237,12 +241,12 @@ public Class Test extends AbsTest{
 )
 
 
-Auto::Num input=2;
-@using Sub:fDocker.src:"./sampleFD.fd" [{setState(input);},return for Auto::Boolean output]
+Auto::Num input = 2;
+@using Sub:fDocker.src:"./sampleFD.fd" [ {setState(input);},return for Auto::Boolean output]
 //fDocker source code file including
-if(output){
+if (output) {
 
-}else{
+} else {
 
 }
 
@@ -253,23 +257,23 @@ if(output){
 )
 
 
-@using This:hjr(
+@using This:hjr (
     //code written in Hjerbata(lang bind of Hardin Namespace)
 
 )
 
 
-@using Tolte:Chestnut(
+@using Tolte:Chestnut (
     //code written in Chestnut(lang bind of Tolte Namespace)
 
 )
 
-@using Google:Dart(
+@using Google:Dart (
     //code written in Dart(lang bind of Google Namespace)
 
 )
 
-@using Google:Go(
+@using Google:Go (
     //code written in Go lang(lang bind of Google Namespace)
 
 )
