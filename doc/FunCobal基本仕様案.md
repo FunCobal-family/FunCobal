@@ -3,7 +3,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [前文 - Preamble](#%E5%89%8D%E6%96%87---preamble)
 - [概要- Abstract](#%E6%A6%82%E8%A6%81--abstract)
 - [名称 - Name](#%E5%90%8D%E7%A7%B0---name)
@@ -82,7 +81,7 @@ Ruby を超える楽しさ、C 言語の速度、MATRAB や Mathematica のよ�
 
 ## 概要- Abstract
 
-この言語は、Julia ,Dart ,及び Ruby に触発されて製作されたものであり、Julia, Dart, Ruby, Ada, Haskell, 及び OCaml の影響を強く受けている。また、これらの言語及びその他の数多の諸言語を参考にしている。
+この言語は、Julia ,Dart ,及び Ruby に触発されて製作されたものであり、Julia, Dart, Ruby, Ada, Haskell, Oz, D 及び OCaml の影響を強く受けている。また、これらの言語及びその他の数多の諸言語を参考にしている。
 
 汎用機能と特化型機能を兼ね備えている超高級言語である。分散処理・並列処理や数理数式処理・科学技術計算・統計解析に特化しているほか、グラフィック・空間モデル処理、ハードウェア(インターフェース等)制御、組込システム(センサ/アクチュエータ)制御、文字列処理、データ(構造データ/データベース)処理、サーバ処理等にも幅広くフォーカスされている。手続き型と関数型の性質を兼ね合わせた真のクロスプラットフォーム言語である。
 
