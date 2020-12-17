@@ -1,58 +1,56 @@
-///Sample Code of FunCobal                                                                ^/
-///made by Haruka Sato(Takuya Matsunaga)                                                  ^/
-///of Supoijar.org/IntelligenceResearch                                                   ^/
-///named by Mr. Suwawa                                                                    ^/
-///24-4-2020                                                                               ^/
-///lisenced with S-GLPL, but until completion of S-GLPL, apply MIT Licence instead of that.^/
+TOP HEAD
 
-//environment specifier(optional,for developers)
-//gen1:*.fcb, gen2:*.fcbd, gen3:*.fc
+///
+| Sample Code of FunCobal                                                                ^/
+| made by Haruka Sato(Takuya Matsunaga)                                                  ^/
+| of Supoijar.org/IntelligenceResearch                                                   ^/
+| named by Mr. Suwawa                                                                    ^/
+| 24-4-2020                                                                               ^/
+| lisenced with S-GLPL, but until completion of S-GLPL, apply MIT Licence instead of that.^/
+///
+
+#! environment specifier(optional,for developers)
+#! gen1:*.fcb, gen2:*.fcbd, gen3:*.fc
 @env : dev0,lint1.9.2,sdk0
 
-//Settle of package name.^/
+#! Settle of package name.
 @package "fun_cobal_sample";
 
 
 
-// import of outer program files, with settle of unique namespace.^/
-//with package name specifying.^/
+#!  import of outer program files, with settle of unique namespace.
+//with package name specifying.
 @import "package:sample/sample.fcb" as sample1;
 //with directory path specifying.
 @import "./sample/sample.fcb" as sample2;
 
 
-//import of the core packages.^/
+#!import of the core packages.
 @depend "core:FC_Sample/Component";
 @depend "core:ExtIO/FileIO";
 @depend "core:Math/StdMath";
-//with namespace in header scope
-@depend "core:Net/StdNet" h.as net;
-//with namespace in global scope
-@depend "core:Net/WebHttpFw" as whf;
 
-//import of core packages of family languages
+#! next two are include limiting of importing objects or modules.
+#! each of module is a group of objects
+#! two sources both of module and object
+@depend "core:Net/StdNet" include <`module(GenLib), URI> as net;
+#! a source of module
+@depend "core:Net/WebHttpFw" include <`module(Server)> as whf;
+
+#!import of core packages of family languages
 @depend "fd:Docker";
 
 
-//include limiting of importing objects or modules.
-//each of module is a group of objects
-//two sources both of module and object
-#include <`module(GenLib), URI> for net;
-//a source of module
-#include <`module(Server)> for whf;
-
-
-
-//Set up of link outer equipments and languages. ^/
+#! Set up of link outer equipments and languages.
 :net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as DockerF;
 :implements "fd.Docker.nfc.felica" for DockerF;
 
 
+END HEAD
 
 
 
-
-//Object Oriented Programming.^/
+-- Object Oriented Programming.
 Public::Class Nums {
     Let::Either a \def;
     Let::Der b \def;
@@ -62,38 +60,41 @@ Public::Class Nums {
     Var::Double f \def;
     Const::Float g \def;
 
-    //Type of Matrix.
+    -- Type of Matrix.
     Let::Matrix mat :=  {};
-    //Generics.
+    -- Generics.
     Let::Matrix<Int> mat2 :=  {};
-    //^/
 
-    //Polish Notation
-    //:(operator operand,operand,...)
-    //:(function parameter,...)
-    //Next example returns 11, as Number,has type of Int.
-    //:(+ 4,5,2)
+    (*
+    Polish Notation
+    :(operator operand,operand,...)
+    :(function parameter,...)
+    Next example returns 11, as Number,has type of Int.
+    :(+ 4,5,2)
+    *)
     Let::Int polTest := :(* 3,2,5);
     Let::Double polTest2 := :(/ :(+ 5,2),4);
     :(= (Let::Int PolTest3),:(/ :(+ 5,2),4));
 
 
-
-    //Standard Settle of Delay same 
-    //:# ms
-    //Next example settle 20ms delay.
-    //:# 20
+    (*
+    Standard Settle of Delay same 
+    :# ms
+    Next example settle 20ms delay.
+    :# 20
+    *)
     :# 8;
+
 
     :~
     :|
     :^
 
 
-    /* [flags] ReturnType funcName(args)[props]
+    (* [flags] ReturnType funcName(args)[props]
     flags ... static, final, async, etc.
     props ... extends<name>, etc.
-    */
+    *)
     Int static.final.getlen(Der im) {
         Let::Int i;
         while() {
@@ -103,7 +104,7 @@ Public::Class Nums {
     }
 }
 
-//The Exceptions.
+-- The Exceptions.
 do {
     /* Something code that may occur exceptions */
     throw Exception;//throw Exception
@@ -111,26 +112,26 @@ do {
     throw SomeException;//throw Exception in type "SomeException"
 }
 catch {
-    /* Something code to do when occurred some exceptions */
+    -- Something code to do when occurred some exceptions
 }
 catch (SomeException e) {
-    /* Something code to do when occurred exceptions in type "SomeException" */
+    -- Something code to do when occurred exceptions in type "SomeException"
 }
 ensure {
-    /* Something code to do in regardless of raise exceptions */
+    -- Something code to do in regardless of raise exceptions
 }
 else {
-    /* Something code to do when not occurred any exceptions what written rescue code */
+    -- Something code to do when not occurred any exceptions what written rescue code
 }
 
-//Component Oriented Programming.
+-- Component Oriented Programming.
 @component (
     export ComponentTestA;
     public.Class PartA {
-        //contents
+        -- contents
     }   
     public.Class PartB {
-        //contents
+        -- contents
     }
 )
 @component (
@@ -145,14 +146,16 @@ else {
         }
     )
 )
-//外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
+
+-- 外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
 @dare (
-//イベント駆動プログラミング
+-- イベント駆動プログラミング
     Let::Stream dfs := Docker.out.stream();
     Let::File ff := FileIO
     core.put("Test felica event");
 )
-//関数型プログラミング
+
+-- 関数型プログラミング
 @function (
     Int Let::factor(Int n) :=  {
         if (n>0)  {
@@ -162,7 +165,8 @@ else {
         }
     }
 )
-//構造データの埋め込み・生成
+
+-- 構造データの埋め込み・生成
 @sdata [export:sample_bts] (
     ./mode="bigtable",file="sample.bts",src="./data/"
 )
@@ -178,7 +182,7 @@ else {
     .div:1_1=a:1_1_1(href="./../path/path/some_p.html");
     .a:1_1_1=div
 
-//*:
+{-
     <!doctype html>
         <html lang="ja">
 
@@ -221,7 +225,7 @@ else {
 </html>
 
 
-:*//
+-}
 )
 
 
@@ -230,20 +234,20 @@ abstract Class AbsTest {
 }
 public Class Test extends AbsTest {
     Void runB() {
-        //actual code
+        -- actual code
     }
 }
 
 
 @using Sub:fd (
-    //code written in fDocker(DSL of FunCobal,lang bind of Hardin Namespace)
+    -- code written in fDocker(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )
 
 
 Auto::Num input = 2;
 @using Sub:fDocker.src:"./sampleFD.fd" [ {setState(input);},return for Auto::Boolean output]
-//fDocker source code file including
+-- fDocker source code file including
 if (output) {
 
 } else {
@@ -252,36 +256,36 @@ if (output) {
 
 
 @using Sub:tex (
-    //code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
+    -- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )
 
 
 @using This:hjr (
-    //code written in Hjerbata(lang bind of Hardin Namespace)
+    -- code written in Hjerbata(lang bind of Hardin Namespace)
 
 )
 
 
 @using Tolte:Chestnut (
-    //code written in Chestnut(lang bind of Tolte Namespace)
+    -- code written in Chestnut(lang bind of Tolte Namespace)
 
 )
 
 @using Google:Dart (
-    //code written in Dart(lang bind of Google Namespace)
+    -- code written in Dart(lang bind of Google Namespace)
 
 )
 
 @using Google:Go (
-    //code written in Go lang(lang bind of Google Namespace)
+    -- code written in Go lang(lang bind of Google Namespace)
 
 )
 
 
 
 @using Sub: (
-    //code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
+    -- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )
 

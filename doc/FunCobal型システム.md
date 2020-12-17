@@ -22,7 +22,7 @@
       - TronCode
       - NMCode
       - Rune
-    - ChObj
+    - Chd
       - Char
       - String
   - Sys
