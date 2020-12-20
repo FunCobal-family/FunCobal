@@ -31,6 +31,6 @@ hart update all
 cd sample/lib#leafSample/sampleRepo/sampleLeaf
 # archive to FIDOLS file
 myk ar -o ./../sampleLeaf.fidols --s srl
-# '-o' is output file, '-s' is imput file, and 'srl' after '-s' means optional file both of Hardinfile.cosh, README.md,LICENCE.md
+# '-o' is output file, '-s' is input file, and 'srl' after '-s' means optional file both of Hardinfile.cosh, README.md,LICENCE.md
 cd ./../
 myk ua -o sappleLeaf_2 sampleLeaf.fidols
