@@ -1,5 +1,6 @@
 # FunCobal 基本仕様原案
 
+<!--
 <style>
 body {
     counter-reset: h2;
@@ -36,7 +37,7 @@ h6:before {
     counter-increment: h6;
     content: counter(h5) ". " counter(h6) ". ";
 }
-</style>
+</style> -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
