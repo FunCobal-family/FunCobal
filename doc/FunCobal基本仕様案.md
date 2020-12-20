@@ -1,5 +1,42 @@
 # FunCobal 基本仕様原案
 
+<style>
+body {
+    counter-reset: h2;
+}
+h2 {
+    counter-reset: h3;
+}
+h3 {
+    counter-reset: h4;
+}
+h4 {
+    counter-reset: h5;
+}
+h5 {
+    counter-reset: h6;
+}
+h2:before {
+    counter-increment: h2;
+    content: "第" counter(h2) "章 ";
+}
+h3:before {
+    counter-increment: h3;
+    content: "第" counter(h3) "部 ";
+}
+h4:before {
+    counter-increment: h4;
+    content: "第" counter(h4) "節 ";
+}
+h5:before {
+    counter-increment: h5;
+    content: counter(h5) ". ";
+}
+h6:before {
+    counter-increment: h6;
+    content: counter(h5) ". " counter(h6) ". ";
+}
+</style>
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
