@@ -1,0 +1,6 @@
+Struct time_s {
+    Auto::UInt megs --32byte
+    Auto::UInt sec --32byte
+    Auto::UInt ms --32byte
+    Auto::BInt epochFor = 1 --16byte,
+}

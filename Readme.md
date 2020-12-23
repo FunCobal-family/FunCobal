@@ -1,6 +1,6 @@
 <img src="./FunCobal_Language_Logo.svg" width="150em" style="float:left" />
 
-# FanCobal；FanCoBal 第一世代(初期版)
+# FanCobal；FanCoBal 第一世代
 
 ![GitHub](https://img.shields.io/github/license/FunCobal-family/FunCobal?style=plastic&label=%E4%BD%BF%E7%94%A8%E8%A8%B1%E8%AB%BE%E6%9B%B8)
 ![GitHub repo size](https://img.shields.io/github/repo-size/FunCobal-family/FunCobal?label=%E3%83%AC%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%BA)
