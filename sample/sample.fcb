@@ -1,4 +1,4 @@
-TOP HEAD
+#[TOP HEAD]
 
 ///
 | Sample Code of FunCobal                                                                ^/
@@ -43,27 +43,30 @@ TOP HEAD
 
 #! Set up of link outer equipments and languages.
 :net w/e.netlist.dock.nfc.q?Sony.PaSoRi (rw) as DockerF;
-:implements "fd.Docker.nfc.felica" for DockerF;
+:impl "fd.Docker.nfc.felica" for DockerF;
 
 
-END HEAD
+#[END HEAD]
 
 
 
 -- Object Oriented Programming.
 Public::Class Nums {
-    Let::Either a \def;
-    Let::Der b \def;
-    Let::Dem c \def;
-    Let::Int d \def;
-    Let::Num  e  \def;
-    Var::Double f \def;
-    Const::Float g \def;
+    #[kind Let]
+    Either a
+    Der b
+    Dem c
+    Int d
+    Num e
+    #[clr kind]
+    -- 自動実装プロパティ
+    Var::Double f (set,get)
+    Const::Float g
 
     -- Type of Matrix.
-    Let::Matrix mat :=  {};
+    Let::Matrix mat :=  {}
     -- Generics.
-    Let::Matrix<Int> mat2 :=  {};
+    Let::Matrix<Int> mat2 :=  {}
 
     (*
     Polish Notation
@@ -72,44 +75,44 @@ Public::Class Nums {
     Next example returns 11, as Number,has type of Int.
     :(+ 4,5,2)
     *)
-    Let::Int polTest := :(* 3,2,5);
-    Let::Double polTest2 := :(/ :(+ 5,2),4);
-    :(= (Let::Int PolTest3),:(/ :(+ 5,2),4));
+    Let::Int polTest := :(* 3,2,5)
+    Let::Double polTest2 := :(/ :(+ 5,2),4)
+    :(= (Let::Int PolTest3),:(/ :(+ 5,2),4))
 
 
     (*
-    Standard Settle of Delay same 
+    Standard Settle of Delay same
     :# ms
     Next example settle 20ms delay.
     :# 20
     *)
-    :# 8;
+    :# 8
 
-
+    {-
     :~
     :|
     :^
-
+    -}
 
     (* [flags] ReturnType funcName(args)[props]
     flags ... static, final, async, etc.
     props ... extends<name>, etc.
     *)
     Int static.final.getlen(Der im) {
-        Let::Int i;
+        Let::Int i
         while() {
 
         }
-        return i;
+        return i
     }
 }
 
 -- The Exceptions.
 do {
     /* Something code that may occur exceptions */
-    throw Exception;//throw Exception
-    raise Exception;//or for this what alias of it
-    throw SomeException;//throw Exception in type "SomeException"
+    throw Exception -- throw Exception
+    raise Exception -  or for this what alias of it
+    throw SomeException -- throw Exception in type "SomeException"
 }
 catch {
     -- Something code to do when occurred some exceptions
@@ -126,23 +129,23 @@ else {
 
 -- Component Oriented Programming.
 @component (
-    export ComponentTestA;
+    export ComponentTestA
     public.Class PartA {
         -- contents
-    }   
+    }
     public.Class PartB {
         -- contents
     }
 )
 @component (
-    export ComponentTestB;
+    export ComponentTestB
     im PartC{
 
     }
     @function(
 
         Axilin (input) :=  {
-           exp(s);
+           exp(s)
         }
     )
 )
@@ -150,9 +153,9 @@ else {
 -- 外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
 @dare (
 -- イベント駆動プログラミング
-    Let::Stream dfs := Docker.out.stream();
+    Let::Stream dfs := Docker.out.stream()
     Let::File ff := FileIO
-    core.put("Test felica event");
+    core.put("Test felica event")
 )
 
 -- 関数型プログラミング
@@ -171,15 +174,15 @@ else {
     ./mode="bigtable",file="sample.bts",src="./data/"
 )
 @sdata [export:web_test] (
-    ./mode="html",file="index.html",src="./a.out/",lang="ja";
-    .html=head..body;
-    .head=meta(charset="UTF-8")..title..link(rel="stylesheet",type="text/css",href="./style.css");
-    .title=CDATA`[some site｜org-rs];
-    .body=font(face="ＭＳ Ｐ明朝,ＭＳ 明朝,凸版文久明朝 R");
-    .font=div:1(class="main")..div:2(class="sub")..div:3(div class="subst")..div:4(class="fotter");
-    .div:1=nav1;
-    .nav:1=div:1_1(class="title");
-    .div:1_1=a:1_1_1(href="./../path/path/some_p.html");
+    ./mode="html",file="index.html",src="./a.out/",lang="ja"
+    .html=head..body
+    .head=meta(charset="UTF-8")..title..link(rel="stylesheet",type="text/css",href="./style.css")
+    .title=CDATA`[some site｜org-rs]
+    .body=font(face="ＭＳ Ｐ明朝,ＭＳ 明朝,凸版文久明朝 R")
+    .font=div:1(class="main")..div:2(class="sub")..div:3(div class="subst")..div:4(class="fotter")
+    .div:1=nav1
+    .nav:1=div:1_1(class="title")
+    .div:1_1=a:1_1_1(href="./../path/path/some_p.html")
     .a:1_1_1=div
 
 {-
@@ -230,7 +233,7 @@ else {
 
 
 abstract Class AbsTest {
-    public final void RunB();
+    public final void RunB()
 }
 public Class Test extends AbsTest {
     Void runB() {
@@ -245,8 +248,8 @@ public Class Test extends AbsTest {
 )
 
 
-Auto::Num input = 2;
-@using Sub:fDocker.src:"./sampleFD.fd" [ {setState(input);},return for Auto::Boolean output]
+Auto::Num input := 2
+@using Sub:fDocker.src:"./sampleFD.fd" [ {setState(input)},return for Auto::Boolean output]
 -- fDocker source code file including
 if (output) {
 
