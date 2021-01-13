@@ -1,0 +1,49 @@
+.Math Extended Operation Query Language
+複素電力 p=pe+j*pj:vec,p=_v*i:vec、
+実効電力 pe=p.re:vec、
+無効電力 pj=p.im:vec、
+力率 cp=pe/pa:vec、
+v=50[V]
+om=100[rad/s]
+r=1[ohm]
+c=0.02[fa]
+RC直列
+
+pa=sqrt~pe^2+pj^2:vec
+
+i=v/(r-j*xc):vec
+xc=1/(om*c)
+
+_v=v.re-v.im
+-----------------
+req 6
+inn 17
+_v=50[V]
+
+req 7,9
+inn 15
+xc=1/(100*0.02)=1/2=0.5
+
+req 6,8,25
+inn 14
+i=50/(1-0.5j)
+
+req 21,29
+inn 2
+p=50*(50/1-0.5j)=(50^2)/(1-0.5j)=(500)*(1+0.5j)=500+100j
+
+req 33
+inn 3
+pe=500
+
+req 33
+inn 4
+pj=100j
+
+req 37,41
+inn 12
+pa=sqrt~500^2+100j^2=sqrt~250000-10000=sqrt~(25-1)*10000=100'24
+
+req 37,45
+inn 5
+cp=500/100'24=5/'24
