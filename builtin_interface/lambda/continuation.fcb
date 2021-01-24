@@ -1,0 +1,12 @@
+@function (
+    Const::Fn<Tag> __makeCTag <- (Symbol sym) {
+        makeContPrTag (sym)
+    }
+    Const::Fn<Thunk||OnAbort> reset/cc! <- (Thunk thunk) {
+        call/pr! (thunk, makeCTag (>\(AbortThunk) AbortThunk))
+    }
+    Const::Fn<Cont> shift/cc! <- (Fn<Any> func) {
+
+    }
+    Const::Fn<> 
+)
