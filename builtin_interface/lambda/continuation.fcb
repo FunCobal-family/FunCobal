@@ -3,7 +3,7 @@
         makeContPrTag (sym)
     }
     Const::Fn<Thunk||OnAbort> reset/cc! <- (Thunk thunk) {
-        call/pr! (thunk, makeCTag (>\(AbortThunk) AbortThunk))
+        call/pr! (thunk, makeCTag (>\ abortThunk -> abortThunk))
     }
     Const::Fn<Cont> shift/cc! <- (Fn<Any> func) {
 
