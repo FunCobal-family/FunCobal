@@ -15,7 +15,8 @@
             do{
                 abort/cc! (
                     __makeCTag (), (>\ () -> reset/cc! (>\ () -> fun kk)))
-            }}), __makeCTag ())
+            }
+        }), __makeCTag ())
     }
     Const::Fn<Void> prompt/cc! <- (Thunk thunk) {
         reset/cc! (thunk)
