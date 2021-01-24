@@ -1,12 +1,32 @@
 @function (
-    Const::Fn<Tag> __makeCTag <- (Symbol sym) {
-        makeContPrTag (sym)
+    Const::Fn<Tag> __makeCTag <- () {
+        makeContPrTag ("Sym")
     }
-    Const::Fn<Thunk||OnAbort> reset/cc! <- (Thunk thunk) {
-        call/pr! (thunk, makeCTag (>\ abortThunk -> abortThunk))
+    Const::Fn<Void> reset/cc! <- (Thunk thunk) {
+        call/pr! (
+            thunk, 
+            __makeCTag () , 
+            (>\ (Let::Any abortThunk) -> abortThunk)
+        )
     }
     Const::Fn<Cont> shift/cc! <- (Fn<Any> func) {
-
+        call/cp! ((>\ (Let::Any k) -> {
+            Let::Any kk <- (>\ (Let::Any v) -> reset/cc! (>\ () -> k v))
+            do{
+                abort/cc! (
+                    __makeCTag (), (>\ () -> reset/cc! (>\ () -> fun kk)))
+            }}), __makeCTag ())
     }
-    Const::Fn<> 
+    Const::Fn<Void> prompt/cc! <- (Thunk thunk) {
+        reset/cc! (thunk)
+    }
+    Const::Fn<Cont> ctl/cc! <- (Fn<Any> func) {
+        call/cp! (
+            (>\ (Let::Any k) -> abort/cc! (
+                __makeCTag (), 
+                (>\ () -> prompt/cc! (>\ () -> fun k))
+            )), 
+            __makeCTag ()
+        )
+    }
 )
