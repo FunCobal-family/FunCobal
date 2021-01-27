@@ -164,6 +164,10 @@ h6:before {
   - [並列処理](#%E4%B8%A6%E5%88%97%E5%87%A6%E7%90%86)
   - [分散処理](#%E5%88%86%E6%95%A3%E5%87%A6%E7%90%86)
 - [例外処理](#%E4%BE%8B%E5%A4%96%E5%87%A6%E7%90%86)
+- [言語間グルー機能](#%E8%A8%80%E8%AA%9E%E9%96%93%E3%82%B0%E3%83%AB%E3%83%BC%E6%A9%9F%E8%83%BD)
+  - [他言語との ICCF インターフェース(Inter-Compiler-Compiler-Framework Interface)](#%E4%BB%96%E8%A8%80%E8%AA%9E%E3%81%A8%E3%81%AE-iccf-%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9inter-compiler-compiler-framework-interface)
+  - [他言語との相互運用インターフェイス(General Languages InterOperability Interface)](#%E4%BB%96%E8%A8%80%E8%AA%9E%E3%81%A8%E3%81%AE%E7%9B%B8%E4%BA%92%E9%81%8B%E7%94%A8%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9general-languages-interoperability-interface)
+  - [特定関連言語との互換運用インターフェイス (Dynamic InterOperability Interface)](#%E7%89%B9%E5%AE%9A%E9%96%A2%E9%80%A3%E8%A8%80%E8%AA%9E%E3%81%A8%E3%81%AE%E4%BA%92%E6%8F%9B%E9%81%8B%E7%94%A8%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9-dynamic-interoperability-interface)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1148,24 +1152,72 @@ ftr.go ()
 
 ## 例外処理
 
+この言語には一般的意味での例外は存在しない。エラーあるのみである。このエラーを例外と呼ぶ。
+
 ```FunCobal
-//The Exceptions.
+//The Error.
 do {
-    /* Something code that may occur exceptions */
-    throw Exception;//throw Exception
-    raise Exception;//or for this what alias of it
-    throw SomeException;//throw Exception in type "SomeException"
+    /* Something code that may occur errors */
+    throw Err;//throw Error
+    raise Err;//or for this what alias of it
+    throw SomeErr;//throw Error in type "SomeErr"
 }
 catch {
-    /* Something code to do when occurred some exceptions */
+    /* Something code to do when occurred some errors */
 }
 catch (SomeException e) {
-    /* Something code to do when occurred exceptions in type "SomeException" */
+    /* Something code to do when occurred errors in type "SomeException" */
 }
 ensure {
-    /* Something code to do in regardless of raise exceptions */
+    /* Something code to do in regardless of raise errors */
 }
 else {
-    /* Something code to do when not occurred any exceptions what written rescue code */
+    /* Something code to do when not occurred any errors what written rescue code */
 }
 ```
+
+## 言語間グルー機能
+
+この言語は、ソースコードレベルでの言語間グルー機能を提供する。 ラッパ関数や引数のすりあわせとか、 関数を別のバイナリコードに分けたりする必要は全く無い。
+
+||DIO-I|ICCF-I|GLIO-I|
+
+### 他言語との ICCF インターフェース(Inter-Compiler-Compiler-Framework Interface)
+
+[ICCF](https://github.com/FunCobal-family/H-Processing-System/blob/master/概要.md#iccf-inter-compiler-compiler-framework)システム及び言語間アノテーションによる構文森林のコンパイラ間のやり取りにより、他の言語のコードのプログラムファイル中への記述を提供する、一般的利用のため定式化されたプラットフォームを設ける。
+
+詳細は[ICCF](https://github.com/FunCobal-family/H-Processing-System/blob/master/概要.md#iccf-inter-compiler-compiler-framework)に従う。
+
+FunCobal のコードからは`@using`アノテーションにより実現する。
+
+### 他言語との相互運用インターフェイス(General Languages InterOperability Interface)
+
+一般的利用のため定式化された ICCF インターフェースのほか、任意の言語との間において、関数や代数的データ構造の呼び出しを提供する、一般的利用のため定式化されたプラットフォームを設ける。
+
+個々の言語に対し[General Languages Interface Protocol](./IndexGLIP.md)を定立しそれに準拠して呼び出しを可能とする。
+
+FunCobal のコードからは extern 文により実現する。
+
+```C
+// 例えば、C言語の関数がこのようにあったとする。
+int frac(int x);
+
+int frac(int x){
+  return 2*x;
+}
+```
+
+```FunCobal
+--- extern文で言語識別名とともにプロトタイプ宣言をする。
+extern (C) {
+  int frac(int x);
+}
+--- すると、FunCobalのコードからは当たり前のように呼び出すことができる。
+Let::Int frac_as_this <- frac (5)
+```
+
+### 特定関連言語との互換運用インターフェイス (Dynamic InterOperability Interface)
+
+一般的利用のため定式化された ICCF インターフェース及び GLIO インターフェースのほか、特定の言語との間において、関数や代数的データ構造の呼び出しを提供するプラットフォームを設ける。
+
+個々の言語に対し[Dynamic Environment Interface Protocol](./IndexDEIP.md)を定立しそれに準拠して呼び出しを可能とする。
