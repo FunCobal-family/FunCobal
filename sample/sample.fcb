@@ -1,12 +1,12 @@
 #[TOP HEAD]
 
 ///
-| Sample Code of FunCobal                                                                ^/
-| made by Haruka Sato(Takuya Matsunaga)                                                  ^/
-| of Supoijar.org/IntelligenceResearch                                                   ^/
-| named by Mr. Suwawa                                                                    ^/
-| 24-4-2020                                                                               ^/
-| lisenced with S-GLPL, but until completion of S-GLPL, apply MIT Licence instead of that.^/
+| Sample Code of FunCobal
+| made by Haruka Sato(Takuya Matsunaga)
+| of Supoijar.org/IntelligenceResearch
+| named by Mr. Suwawa
+| 24-4-2020
+| lisenced with S-GLPL, but until completion of S-GLPL, apply MIT Licence instead of that.
 ///
 
 #! environment specifier(optional,for developers)
@@ -52,6 +52,7 @@
 
 -- Object Oriented Programming.
 Public::Class Nums {
+    --- 属性
     #[kind Let]
     Either a
     Der b
@@ -59,14 +60,14 @@ Public::Class Nums {
     Int d
     Num e
     #[clr kind]
-    -- 自動実装プロパティ
+    --- 自動実装プロパティ
     Var::Double f (set,get)
     Const::Float g
 
-    -- Type of Matrix.
-    Let::Matrix mat :=  {}
-    -- Generics.
-    Let::Matrix<Int> mat2 :=  {}
+    --- Type of Matrix.
+    Let::Matrix mat <-  {}
+    --- Generics.
+    Let::Matrix<Int> mat2 <-  {}
 
     (*
     Polish Notation
@@ -75,8 +76,8 @@ Public::Class Nums {
     Next example returns 11, as Number,has type of Int.
     :(+ 4,5,2)
     *)
-    Let::Int polTest := :(* 3,2,5)
-    Let::Double polTest2 := :(/ :(+ 5,2),4)
+    Let::Int polTest <- :(* 3,2,5)
+    Let::Double polTest2 <- :(/ :(+ 5,2),4)
     :(= (Let::Int PolTest3),:(/ :(+ 5,2),4))
 
 
@@ -107,34 +108,34 @@ Public::Class Nums {
     }
 }
 
--- The Exceptions.
+-- The Errors.
 do {
-    /* Something code that may occur exceptions */
-    throw Exception -- throw Exception
-    raise Exception -  or for this what alias of it
-    throw SomeException -- throw Exception in type "SomeException"
+    /* Something code that may occur Errors */
+    throw Err --- throw Error
+    raise Err -  or for this what alias of it
+    throw SomeErr --- throw Error in type "SomeErr"
 }
 catch {
-    -- Something code to do when occurred some exceptions
+    --- Something code to do when occurred some Errors
 }
-catch (SomeException e) {
-    -- Something code to do when occurred exceptions in type "SomeException"
+catch (SomeErr e) {
+    --- Something code to do when occurred Errors in type "SomeErr"
 }
 ensure {
-    -- Something code to do in regardless of raise exceptions
+    --- Something code to do in regardless of raise Errors
 }
 else {
-    -- Something code to do when not occurred any exceptions what written rescue code
+    --- Something code to do when not occurred any Errors what written rescue code
 }
 
 -- Component Oriented Programming.
 @component (
     export ComponentTestA
     public.Class PartA {
-        -- contents
+        --- contents
     }
     public.Class PartB {
-        -- contents
+        --- contents
     }
 )
 @component (
@@ -144,7 +145,7 @@ else {
     }
     @function(
 
-        Axilin (input) :=  {
+        Axilin exr <- (input) {
            exp(s)
         }
     )
@@ -153,17 +154,18 @@ else {
 -- 外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
 @dare (
 -- イベント駆動プログラミング
-    Let::Stream dfs := Docker.out.stream()
-    Let::File ff := FileIO
+    Let::Stream dfs <- Docker.out.stream()
+    Let::File ff <- FileIO
     core.put("Test felica event")
 )
 
 -- 関数型プログラミング
 @function (
-    Int Let::factor(Int n) :=  {
-        if (n>0)  {
+    Let::Int factor <- (Int n){
+        if (n>0) {
             n * factor(n - 1)
-        } else  {
+        }
+        else {
             1
         }
     }
@@ -237,18 +239,18 @@ abstract Class AbsTest {
 }
 public Class Test extends AbsTest {
     Void runB() {
-        -- actual code
+        --- actual code
     }
 }
 
 
 @using Sub:fd (
-    -- code written in fDocker(DSL of FunCobal,lang bind of Hardin Namespace)
+    --- code written in fDocker(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )
 
 
-Auto::Num input := 2
+Auto::Num input <- 2
 @using Sub:fDocker.src:"./sampleFD.fd" [ {setState(input)},return for Auto::Boolean output]
 -- fDocker source code file including
 if (output) {
@@ -259,36 +261,36 @@ if (output) {
 
 
 @using Sub:tex (
-    -- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
+    --- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )
 
 
 @using This:hjr (
-    -- code written in Hjerbata(lang bind of Hardin Namespace)
+    --- code written in Hjerbata(lang bind of Hardin Namespace)
 
 )
 
 
 @using Tolte:Chestnut (
-    -- code written in Chestnut(lang bind of Tolte Namespace)
+    --- code written in Chestnut(lang bind of Tolte Namespace)
 
 )
 
 @using Google:Dart (
-    -- code written in Dart(lang bind of Google Namespace)
+    --- code written in Dart(lang bind of Google Namespace)
 
 )
 
 @using Google:Go (
-    -- code written in Go lang(lang bind of Google Namespace)
+    --- code written in Go lang(lang bind of Google Namespace)
 
 )
 
 
 
 @using Sub: (
-    -- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
+    --- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )
 
