@@ -41,7 +41,6 @@ h6:before {
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [前文 - Preamble](#%E5%89%8D%E6%96%87---preamble)
 - [概要- Abstract](#%E6%A6%82%E8%A6%81--abstract)
 - [名称 - Name](#%E5%90%8D%E7%A7%B0---name)
@@ -1180,7 +1179,18 @@ else {
 
 この言語は、ソースコードレベルでの言語間グルー機能を提供する。 ラッパ関数や引数のすりあわせとか、 関数を別のバイナリコードに分けたりする必要は全く無い。
 
-||DIO-I|ICCF-I|GLIO-I|
+| Langs           | DIO-I | ICCF-I | GLIO-I | 状況   |
+| --------------- | :---: | :----: | :----: | :----- |
+| FunCobal family |  〇   |   〇   |   〇   | 未実装 |
+| Chestnut        |   ✕   |   〇   |   〇   | 未実装 |
+| 十書            |   ✕   |   〇   |   〇   | 未実装 |
+| Dart            |   ✕   |   〇   |   〇   | 未実装 |
+| Go              |   ✕   |   〇   |   〇   | 未実装 |
+| Rust            |   ✕   |   ✕    |   〇   | 未対応 |
+| C/C++/C#/D      |   ✕   |   ✕    |   〇   | 未対応 |
+| Julia/Python    |   ✕   |   ✕    |   〇   | 未対応 |
+| Scala/Java      |   ✕   |   ✕    |   〇   | 未対応 |
+| Scheme/Racket   |   ✕   |   ✕    |   〇   | 未対応 |
 
 ### 他言語との ICCF インターフェース(Inter-Compiler-Compiler-Framework Interface)
 
