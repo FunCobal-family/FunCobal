@@ -41,7 +41,6 @@ h6:before {
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [前文 - Preamble](#%E5%89%8D%E6%96%87---preamble)
 - [概要- Abstract](#%E6%A6%82%E8%A6%81--abstract)
 - [名称 - Name](#%E5%90%8D%E7%A7%B0---name)
@@ -557,7 +556,7 @@ try {
 
 #### rescue 文
 
-例外が発生した場合の処理を記述し、補足した例外を救出する：
+例外が発生した場合の処理を記述し、捕捉した例外を救出する：
 
 ```FanCobal
 rescue {
