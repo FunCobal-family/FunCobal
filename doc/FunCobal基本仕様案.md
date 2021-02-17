@@ -765,6 +765,35 @@ Block lp <- laziness {
 
 詳しくは上記リンク先を参照の事。
 
+### 関数
+
+#### 文字列からUnicode数値への変換
+```FunCobal
+--- 通常関数
+ord(String)
+
+--- メソッド付加
+String.ord()
+```
+
+#### Unicode数値から文字列へ変換
+```FunCobal
+--- 通常関数
+chr(String)
+
+--- メソッド付加
+String.chr()
+```
+
+#### 文字列置き換え
+```FunCobal
+--- 通常関数
+replace(置き換え元String,置き換え部分String,置き換え先String)
+
+--- メソッド付加
+置き換え元String.replace(置き換え部分String,置き換え先String)
+```
+
 ## 数理計算
 
 ### 数式処理
