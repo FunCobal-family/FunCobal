@@ -1,0 +1,7 @@
+*.fcb linguist-language=FunCobal
+*.fsnip linguist-language=FunCobal
+*.hfc linguist-language=FunCobalCmd
+*.fpub linguist-language=FunCobalDoc
+*.tsaaspec linguist-language=FunCobalDoc
+*.cosh linguist-language=FunCobal Shell
+
