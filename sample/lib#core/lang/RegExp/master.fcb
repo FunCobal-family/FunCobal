@@ -1,0 +1,41 @@
+struct RegExp impl{
+  REPattern pattern,
+  Bool flagP,
+  Runtime runtime <- RERuntime (), 
+
+
+}
+
+--- POSIX, 鬼雲, 鬼車, 鬼瀬の4つの正規表現体系に対応。
+enum RegExp {
+  this ({String type},),
+  POSIX,
+  Oniguruma,
+  Onigumo,
+  Onigase,
+}
+
+--- デフォルトの正規表現体系は鬼瀬。
+funs RegExp {
+  this <- ({String type},) match (e) {
+    self => {
+      match(type){
+        "POSIX" => RegExp.POSIX,
+        "Oniguruma" => RegExp.Oniguruma,
+        "Onigumo" => RegExp.Onigumo,
+        _ => RegExp.Onigase,
+      }
+    },
+    POSIX => {},
+    Oniguruma => {},
+    Onigumo => {},
+    Onigase => {},
+  }
+  RegExp pattern <- (self), String str) {
+
+  }
+  RegExp match <- (self) {} 
+}
+struct REPattern impl{}
+enum REPattern
+funs REPattern

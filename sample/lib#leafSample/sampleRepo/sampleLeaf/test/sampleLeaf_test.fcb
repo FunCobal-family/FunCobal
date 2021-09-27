@@ -1,0 +1,28 @@
+@test (
+
+  #[bloc: UnitTest1 on testSampleMod]
+    @group (
+      struct UE = UnitEnv;
+      UE.settle;
+      Fn<()> same1 <- () {
+        --- 
+      }
+      Fn<Void> same1 <- () {}
+      Fn<()> same2 <- Void {}
+      Fn<Void> same3 <- Void {}
+      assert: same1 = same2 = same3
+  )
+)
+
+
+Fn<Int> 測度 <- (set A) {
+  assert[after]:
+    returns >= 0
+  assert[by]:
+  asum(A) = asum(returns)
+}
+Fn 確率測度 from 測度 {
+  assert[after]:
+    returns =< 1
+}
+Fn 確率 = 確率測度;

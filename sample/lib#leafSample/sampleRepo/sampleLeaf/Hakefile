@@ -1,0 +1,28 @@
+@fmk default: sample_exe
+@fmk for: sample
+{*
+act: for cmd "hps activate", build&activation of bin cmds
+run: for cmd "hps build", build soft in 
+test: for cmd "hps test"
+build: for cmd "hps build"
+sample: for sample of fmk
+ex: for example of lib or app
+*}
+
+[#desc:this is sample]
+@file sample_exe: [build/sample.exe|build/sample.yzd]{
+  yzc exe build/sample.yzd
+}
+@file sample_yzd: [build/sample.yzd|lib/sample.fcb]{
+  fcbc yzd lib/sample.fcb
+}
+
+{*
+  @fmk library fmk_std/cp_exe
+  @fmk use fmk_std/clean
+  @fmk default {1}_exe
+  @file {1}_exe: 
+  @file {1}_yzd: 
+  @pragma {1}_sh: []
+  @event clean: [on:end :{1}_exe]->cleanAllMid from clean
+*}

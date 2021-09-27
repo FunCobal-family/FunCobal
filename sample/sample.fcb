@@ -15,8 +15,8 @@
 
 #! Settle of package name.
 @package "fun_cobal_sample";
-
-
+#! ds
+@entry $main
 
 #!  import of outer program files, with settle of unique namespace.
 //with package name specifying.
@@ -49,9 +49,8 @@
 #[END HEAD]
 
 
-
--- Object Oriented Programming.
-Public::Class Nums {
+--- Object Oriented Programming.
+public.NameSpace Nums {
     --- 属性
     #[kind Let]
     Either a
@@ -106,9 +105,15 @@ Public::Class Nums {
         }
         return i
     }
+    --- 属性：10進強化(演算)モード
+    #[dc_super]
+    Let::Int dex <- 65820001
+    dec <- &dex^&dex
+    dec.print
+    #[clr dc_super]
 }
 
--- The Errors.
+--- The Errors.
 do {
     /* Something code that may occur Errors */
     throw Err --- throw Error
@@ -128,7 +133,7 @@ else {
     --- Something code to do when not occurred any Errors what written rescue code
 }
 
--- Component Oriented Programming.
+--- Component Oriented Programming.
 @component (
     export ComponentTestA
     public.Class PartA {
@@ -151,15 +156,15 @@ else {
     )
 )
 
--- 外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
+--- 外部デバイス(標準入出力除く)(ICカード読み取り/書き込み器など)の操作
 @dare (
--- イベント駆動プログラミング
+--- イベント駆動プログラミング
     Let::Stream dfs <- Docker.out.stream()
     Let::File ff <- FileIO
     core.put("Test felica event")
 )
 
--- 関数型プログラミング
+--- 関数型プログラミング
 @function (
     Let::Int factor <- (Int n){
         if (n>0) {
@@ -171,7 +176,7 @@ else {
     }
 )
 
--- 構造データの埋め込み・生成
+--- 構造データの埋め込み・生成
 @sdata [export:sample_bts] (
     ./mode="bigtable",file="sample.bts",src="./data/"
 )
@@ -252,7 +257,7 @@ public Class Test extends AbsTest {
 
 Auto::Num input <- 2
 @using Sub:fDocker.src:"./sampleFD.fd" [ {setState(input)},return for Auto::Boolean output]
--- fDocker source code file including
+--- fDocker source code file including
 if (output) {
 
 } else {
@@ -260,36 +265,36 @@ if (output) {
 }
 
 
-@using Sub:tex (
+@using [Sub:tex] (
     --- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )
 
 
-@using This:hjr (
+@using [This:hjr] (
     --- code written in Hjerbata(lang bind of Hardin Namespace)
 
 )
 
 
-@using Tolte:Chestnut (
+@using [Tolte:Chestnut] (
     --- code written in Chestnut(lang bind of Tolte Namespace)
 
 )
 
-@using Google:Dart (
+@using [Google:Dart] (
     --- code written in Dart(lang bind of Google Namespace)
 
 )
 
-@using Google:Go (
+@using [Google:Go] (
     --- code written in Go lang(lang bind of Google Namespace)
 
 )
 
 
 
-@using Sub: (
+@using [Sub:] (
     --- code written in Texicon(DSL of FunCobal,lang bind of Hardin Namespace)
 
 )

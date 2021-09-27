@@ -1,5 +1,5 @@
 ///Package Build File
-
+//任意(@buildに対応して暗黙的にimportされる)
 @import "core:build/leaves";
 @build(
     if(lang)
